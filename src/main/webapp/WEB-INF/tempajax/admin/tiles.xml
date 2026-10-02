@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="adminListJournal" template="/WEB-INF/tempajax/admin/dashboard/list_journal.jsp"></definition>
+	
+	<definition name="adminListActivities" template="/WEB-INF/tempajax/admin/data/list_activities.jsp"></definition>
+	<definition name="adminListIdentities" template="/WEB-INF/tempajax/admin/data/list_identities.jsp"></definition>
+	<definition name="adminListPostal" template="/WEB-INF/tempajax/admin/data/list_postal.jsp"></definition>
+	
+	<definition name="adminListCompanies" template="/WEB-INF/tempajax/admin/companies/list_companies.jsp"></definition>
+	<definition name="adminListCompaniesProfile" template="/WEB-INF/tempajax/admin/companies/list_profiles.jsp"></definition>
+	<definition name="adminListCompaniesFeature" template="/WEB-INF/tempajax/admin/companies/list_features.jsp"></definition>
+	<definition name="adminListCompaniesCustomer" template="/WEB-INF/tempajax/admin/companies/list_customers.jsp"></definition>
+	
+	<definition name="adminListPromotes" template="/WEB-INF/tempajax/admin/marketplace/list_promotes.jsp"></definition>
+	<definition name="adminListOrders" template="/WEB-INF/tempajax/admin/marketplace/list_orders.jsp"></definition>
+	<definition name="adminListSponsores" template="/WEB-INF/tempajax/admin/marketplace/list_sponsores.jsp"></definition>
+	<definition name="adminListCampaigns" template="/WEB-INF/tempajax/admin/marketplace/list_campaigns.jsp"></definition>
+	<definition name="adminListAudiances" template="/WEB-INF/tempajax/admin/marketplace/list_audiances.jsp"></definition>
+	<definition name="adminListAnnonces" template="/WEB-INF/tempajax/admin/marketplace/list_annonces.jsp"></definition>
+	<definition name="adminListEmployes" template="/WEB-INF/tempajax/admin/marketplace/list_employes.jsp"></definition>
+	
+	<definition name="adminListBlogs" template="/WEB-INF/tempajax/admin/blog/list_blogs.jsp"></definition>
+	<definition name="adminListAutors" template="/WEB-INF/tempajax/admin/blog/list_autors.jsp"></definition>
+	<definition name="adminListBlogstats" template="/WEB-INF/tempajax/admin/blog/list_stats.jsp"></definition>
+	
+	<definition name="adminListReports" template="/WEB-INF/tempajax/admin/feedback/list_reports.jsp"></definition>
+	<definition name="adminListRates" template="/WEB-INF/tempajax/admin/feedback/list_rates.jsp"></definition>
+	<definition name="adminListLocks" template="/WEB-INF/tempajax/admin/feedback/list_locks.jsp"></definition>
+	<definition name="adminListBlocks" template="/WEB-INF/tempajax/admin/feedback/list_blocks.jsp"></definition>
+	
+	<definition name="adminListPremiumSubscribes" template="/WEB-INF/tempajax/admin/premium/list_subscribes.jsp"></definition>
+	<definition name="adminListPremiumOrders" template="/WEB-INF/tempajax/admin/premium/list_orders.jsp"></definition>
+	<definition name="adminListPremiumEmailings" template="/WEB-INF/tempajax/admin/premium/list_emailings.jsp"></definition>
+	<definition name="adminListPremiumBudgets" template="/WEB-INF/tempajax/admin/premium/list_budgets.jsp"></definition>
+	
+	<definition name="adminListDeactivateCompanies" template="/WEB-INF/tempajax/admin/realtime/list_companies.jsp"></definition>
+	<definition name="adminListDeactivateUsers" template="/WEB-INF/tempajax/admin/realtime/list_users.jsp"></definition>
+	<definition name="adminListTestimonials" template="/WEB-INF/tempajax/admin/realtime/list_testimonials.jsp"></definition>
+	<definition name="adminListAssists" template="/WEB-INF/tempajax/admin/realtime/list_assists.jsp"></definition>
+	<definition name="adminListProblems" template="/WEB-INF/tempajax/admin/realtime/list_problems.jsp"></definition>
+	<definition name="adminListContactus" template="/WEB-INF/tempajax/admin/realtime/list_contactus.jsp"></definition>
+	<definition name="adminListChatbots" template="/WEB-INF/tempajax/admin/realtime/list_chatbots.jsp"></definition>
+	
+	<definition name="adminListUsers" template="/WEB-INF/tempajax/admin/team/list_users.jsp"></definition>
+	<definition name="adminListModerators" template="/WEB-INF/tempajax/admin/team/list_moderators.jsp"></definition>
+	<definition name="adminListManagers" template="/WEB-INF/tempajax/admin/team/list_managers.jsp"></definition>
+	
+	<definition name="adminListChater" template="/WEB-INF/tempajax/admin/communication/list_chater.jsp"></definition>
+	<definition name="adminListMessage" template="/WEB-INF/tempajax/admin/communication/list_message.jsp"></definition>
+	<definition name="adminListContact" template="/WEB-INF/tempajax/admin/communication/list_contact.jsp"></definition>
+	<definition name="adminListAppoint" template="/WEB-INF/tempajax/admin/communication/list_appoint.jsp"></definition>
+	<definition name="adminListNotice" template="/WEB-INF/tempajax/admin/communication/list_notice.jsp"></definition>
+	<definition name="adminListGuest" template="/WEB-INF/tempajax/admin/communication/list_guest.jsp"></definition>
+	<definition name="adminListNewsletter" template="/WEB-INF/tempajax/admin/communication/list_newsletter.jsp"></definition>
+	<definition name="adminListChatboter" template="/WEB-INF/tempajax/admin/communication/list_chatboter.jsp"></definition>
+	
+	<definition name="adminListEasyCompanies" template="/WEB-INF/tempajax/admin/easylist/list_companies.jsp"></definition>
+	<definition name="adminListEasyDocuments" template="/WEB-INF/tempajax/admin/easylist/list_documents.jsp"></definition>
+	
+	<definition name="adminDataMarketplace" template="/WEB-INF/tempajax/admin/dashboard/data/data_marketplace.jsp"></definition>
+	<definition name="adminDataFeedback" template="/WEB-INF/tempajax/admin/dashboard/data/data_feedback.jsp"></definition>
+	<definition name="adminDataContent" template="/WEB-INF/tempajax/admin/dashboard/data/data_content.jsp"></definition>
+	<definition name="adminDataLinked" template="/WEB-INF/tempajax/admin/dashboard/data/data_linked.jsp"></definition>
+	<definition name="adminDataAdmin" template="/WEB-INF/tempajax/admin/dashboard/data/data_admin.jsp"></definition>
+	<definition name="adminDataFavorite" template="/WEB-INF/tempajax/admin/dashboard/data/data_favorite.jsp"></definition>
+	
+	<definition name="adminAnalyticAccess" template="/WEB-INF/tempajax/admin/dashboard/analytic/chart_access.jsp"></definition>
+	<definition name="adminAnalyticPremium" template="/WEB-INF/tempajax/admin/dashboard/analytic/chart_premium.jsp"></definition>
+	<definition name="adminAnalyticVisit" template="/WEB-INF/tempajax/admin/dashboard/analytic/chart_visit.jsp"></definition>
+	<definition name="adminAnalyticMarket" template="/WEB-INF/tempajax/admin/dashboard/analytic/chart_market.jsp"></definition>
+	<definition name="adminAnalyticAnalyse" template="/WEB-INF/tempajax/admin/dashboard/analytic/chart_analyse.jsp"></definition>
+	<definition name="adminAnalyticJournal" template="/WEB-INF/tempajax/admin/dashboard/analytic/chart_journal.jsp"></definition>
+	<definition name="adminAnalyticGuest" template="/WEB-INF/tempajax/admin/dashboard/analytic/chart_guest.jsp"></definition>
+	
+</tiles-definitions>
+       

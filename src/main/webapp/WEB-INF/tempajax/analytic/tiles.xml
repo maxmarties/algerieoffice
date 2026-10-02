@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	
+	<definition name="analyticCompaniesType" template="/WEB-INF/tempajax/analytic/analytic_types.jsp"></definition>
+	<definition name="analyticCompaniesAgent" template="/WEB-INF/tempajax/analytic/analytic_agents.jsp"></definition>
+	<definition name="analyticCompaniesCapital" template="/WEB-INF/tempajax/analytic/analytic_capitals.jsp"></definition>
+	<definition name="analyticCompaniesBuild" template="/WEB-INF/tempajax/analytic/analytic_builds.jsp"></definition>
+	<definition name="analyticCompaniesBriefcase" template="/WEB-INF/tempajax/analytic/analytic_briefcases.jsp"></definition>
+	<definition name="analyticCompaniesMonth" template="/WEB-INF/tempajax/analytic/analytic_months.jsp"></definition>
+	<definition name="analyticCompaniesWarehouse" template="/WEB-INF/tempajax/analytic/analytic_warehouses.jsp"></definition>
+	<definition name="analyticCompaniesEffectif" template="/WEB-INF/tempajax/analytic/analytic_effectifs.jsp"></definition>
+	<definition name="analyticCompaniesStrict" template="/WEB-INF/tempajax/analytic/analytic_stricts.jsp"></definition>
+	<definition name="analyticCompaniesRegion" template="/WEB-INF/tempajax/analytic/analytic_regions.jsp"></definition>
+	<definition name="analyticCompaniesDetail" template="/WEB-INF/tempajax/analytic/analytic_details.jsp"></definition>
+	
+</tiles-definitions>
+       

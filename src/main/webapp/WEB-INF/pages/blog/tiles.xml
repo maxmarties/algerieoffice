@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	
+	<!-- BLOG  -->
+	<definition name="blog" template="/WEB-INF/pages/blog/layout.jsp">
+		<put-attribute name="meta" value="/WEB-INF/tags/meta_blog.jsp" />
+		<put-attribute name="link" value="" />
+		<put-attribute name="load" value="/WEB-INF/basics/loading_home.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/menus/menu_blog.jsp" />
+		<put-attribute name="aside" value="/WEB-INF/asides/aside_explorer.jsp" />
+		<put-attribute name="banner" value="/WEB-INF/basics/sidebar_banner.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/footers/footer_home.jsp" />
+		<put-attribute name="chater" value="/WEB-INF/chats/chater_public.jsp" />
+		<put-attribute name="dialog" value="" />
+		<put-attribute name="script" value="" />
+	</definition>
+	
+	<!-- BLOG HOME  -->
+	<definition name="blogHome" extends="blog">
+		<put-attribute name="link" value="/WEB-INF/links/blog/l_home.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/blog/home.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_newsletter.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/blog/s_home.jsp" />
+	</definition>
+	
+	<!-- BLOG FAMILY  -->
+	<definition name="blogFamily" extends="blog">
+		<put-attribute name="link" value="/WEB-INF/links/blog/l_family.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/blog/family.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/blog/s_family.jsp" />
+	</definition>
+	
+	<!-- BLOG AUTOR  -->
+	<definition name="blogAutor" extends="blog">
+		<put-attribute name="link" value="/WEB-INF/links/blog/l_autor.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/blog/autor.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/blog/s_autor.jsp" />
+	</definition>
+	
+	<!-- BLOG SEARCH  -->
+	<definition name="blogSearch" extends="blog">
+		<put-attribute name="link" value="/WEB-INF/links/blog/l_search.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/blog/search.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/blog/s_search.jsp" />
+	</definition>
+	
+	<!-- BLOG KEYWORD  -->
+	<definition name="blogKeyword" extends="blog">
+		<put-attribute name="link" value="/WEB-INF/links/blog/l_keyword.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/blog/keyword.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/blog/s_keyword.jsp" />
+	</definition>
+	
+	<!-- BLOG ARTICLE  -->
+	<definition name="blogArticle" extends="blog">
+		<put-attribute name="link" value="/WEB-INF/links/blog/l_article.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/blog/article.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_login.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/blog/s_article.jsp" />
+	</definition>
+	
+	<!-- BLOG ERROR  -->
+	<definition name="blogError" extends="blog">
+		<put-attribute name="link" value="/WEB-INF/links/blog/l_error.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/blog/error.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/blog/s_error.jsp" />
+	</definition>
+	
+</tiles-definitions>

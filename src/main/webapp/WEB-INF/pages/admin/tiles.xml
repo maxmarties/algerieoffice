@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+	
+	<!-- ADMIN -->
+	<definition name="admin" template="/WEB-INF/pages/admin/layout.jsp">
+        <put-attribute name="meta" value="/WEB-INF/tags/meta_admin.jsp" />
+		<put-attribute name="link" value="" />
+		<put-attribute name="menu" value="/WEB-INF/menus/menu_admin.jsp" />
+		<put-attribute name="aside" value="/WEB-INF/asides/aside_admin.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/footers/footer_dashboard.jsp" />
+        <put-attribute name="chater" value="/WEB-INF/chats/chater_public.jsp" />
+        <put-attribute name="dialog" value="" />
+        <put-attribute name="script" value="" />
+	</definition>
+	
+	<!-- ADMIN DASHBOARD  -->
+	<definition name="adminDashboard" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/dashboard/l_dashboard.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/dashboard/dashboard.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/dashboard/s_dashboard.jsp" />
+	</definition>
+	
+	<!-- ADMIN JOURNAL  -->
+	<definition name="adminJournal" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/dashboard/l_journal.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/dashboard/journal.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/dashboard/s_journal.jsp" />
+	</definition>
+	
+	<!-- ADMIN ANALYTIC  -->
+	<definition name="adminAnalytic" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/dashboard/l_analytic.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/dashboard/analytic.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/dashboard/s_analytic.jsp" />
+	</definition>
+	
+	<!-- ADMIN COMPANIES ALL  -->
+	<definition name="adminCompaniesAll" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/companies/l_companies.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/companies/companies.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/companies/s_companies.jsp" />
+	</definition>
+	
+	<!-- ADMIN COMPANIES PROFILE  -->
+	<definition name="adminCompaniesProfile" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/companies/l_profiles.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/companies/profiles.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/companies/s_profiles.jsp" />
+	</definition>
+	
+	<!-- ADMIN COMPANIES FEATURES  -->
+	<definition name="adminCompaniesFeatures" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/companies/l_features.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/companies/features.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/companies/s_features.jsp" />
+	</definition>
+	
+	<!-- ADMIN COMPANIES FEATURE  -->
+	<definition name="adminCompaniesFeature" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/companies/l_feature.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/companies/feature.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/companies/s_feature.jsp" />
+	</definition>
+	
+	<!-- ADMIN COMPANIES BUDGET  -->
+	<definition name="adminCompaniesBudget" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/companies/l_budget.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/companies/budget.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/companies/s_budget.jsp" />
+	</definition>
+	
+	<!-- ADMIN COMPANIES CUSTOMERS  -->
+	<definition name="adminCompaniesCustomers" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/companies/l_customers.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/companies/customers.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/companies/s_customers.jsp" />
+	</definition>
+	
+	<!-- ADMIN MARKETPLACE PROMOTES  -->
+	<definition name="adminMarketplacePromotes" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/marketplace/l_promotes.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/marketplace/promotes.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/marketplace/s_promotes.jsp" />
+	</definition>
+	
+	<!-- ADMIN MARKETPLACE PROMOTE  -->
+	<definition name="adminMarketplacePromote" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/marketplace/l_promote.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/marketplace/promote.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/marketplace/s_promote.jsp" />
+	</definition>
+	
+	<!-- ADMIN MARKETPLACE ORDERS  -->
+	<definition name="adminMarketplaceOrders" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/marketplace/l_orders.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/marketplace/orders.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/marketplace/s_orders.jsp" />
+	</definition>
+	
+	<!-- ADMIN MARKETPLACE ORDER  -->
+	<definition name="adminMarketplaceOrder" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/marketplace/l_order.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/marketplace/order.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/marketplace/s_order.jsp" />
+	</definition>
+	
+	<!-- ADMIN MARKETPLACE SPONSORES  -->
+	<definition name="adminMarketplaceSponsores" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/marketplace/l_sponsores.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/marketplace/sponsores.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/marketplace/s_sponsores.jsp" />
+	</definition>
+	
+	<!-- ADMIN MARKETPLACE SPONSORE  -->
+	<definition name="adminMarketplaceSponsore" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/marketplace/l_sponsore.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/marketplace/sponsore.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/marketplace/s_sponsore.jsp" />
+	</definition>
+	
+	<!-- ADMIN MARKETPLACE CAMPAIGNS  -->
+	<definition name="adminMarketplaceCampaigns" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/marketplace/l_campaigns.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/marketplace/campaigns.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/marketplace/s_campaigns.jsp" />
+	</definition>
+	
+	<!-- ADMIN MARKETPLACE CAMPAIGN  -->
+	<definition name="adminMarketplaceCampaign" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/marketplace/l_campaign.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/marketplace/campaign.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/marketplace/s_campaign.jsp" />
+	</definition>
+	
+	<!-- ADMIN MARKETPLACE AUDIANCES  -->
+	<definition name="adminMarketplaceAudiances" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/marketplace/l_audiances.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/marketplace/audiances.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/marketplace/s_audiances.jsp" />
+	</definition>
+	
+	<!-- ADMIN MARKETPLACE AUDIANCE  -->
+	<definition name="adminMarketplaceAudiance" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/marketplace/l_audiance.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/marketplace/audiance.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/marketplace/s_audiance.jsp" />
+	</definition>
+	
+	<!-- ADMIN MARKETPLACE ANNONCES  -->
+	<definition name="adminMarketplaceAnnonces" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/marketplace/l_annonces.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/marketplace/annonces.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/marketplace/s_annonces.jsp" />
+	</definition>
+	
+	<!-- ADMIN MARKETPLACE EMPLOYES  -->
+	<definition name="adminMarketplaceEmployes" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/marketplace/l_employes.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/marketplace/employes.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/marketplace/s_employes.jsp" />
+	</definition>
+	
+	<!-- ADMIN BLOG BLOGS  -->
+	<definition name="adminBlogBlogs" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/blog/l_blogs.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/blog/blogs.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/blog/s_blogs.jsp" />
+	</definition>
+	
+	<!-- ADMIN BLOG BLOG  -->
+	<definition name="adminBlogBlog" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/blog/l_blog.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/blog/blog.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/blog/s_blog.jsp" />
+	</definition>
+	
+	<!-- ADMIN BLOG AUTORS  -->
+	<definition name="adminBlogAutors" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/blog/l_autors.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/blog/autors.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/blog/s_autors.jsp" />
+	</definition>
+	
+	<!-- ADMIN BLOG AUTOR  -->
+	<definition name="adminBlogAutor" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/blog/l_autor.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/blog/autor.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/blog/s_autor.jsp" />
+	</definition>
+	
+	<!-- ADMIN BLOG STATS  -->
+	<definition name="adminBlogStats" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/blog/l_stats.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/blog/stats.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/blog/s_stats.jsp" />
+	</definition>
+	
+	<!-- ADMIN BLOG STAT  -->
+	<definition name="adminBlogStat" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/blog/l_stat.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/blog/stat.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/blog/s_stat.jsp" />
+	</definition>
+	
+	<!-- ADMIN DATA ACTIVITIES  -->
+	<definition name="adminDataActivities" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/data/l_activities.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/data/activities.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/data/s_activities.jsp" />
+	</definition>
+	
+	<!-- ADMIN DATA ACTIVITY  -->
+	<definition name="adminDataActivity" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/data/l_activity.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/data/activity.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/data/s_activity.jsp" />
+	</definition>
+	
+	<!-- ADMIN DATA IDENTITIES  -->
+	<definition name="adminDataIdentities" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/data/l_identities.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/data/identities.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/data/s_identities.jsp" />
+	</definition>
+	
+	<!-- ADMIN DATA IDENTITY  -->
+	<definition name="adminDataIdentity" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/data/l_identity.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/data/identity.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/data/s_identity.jsp" />
+	</definition>
+	
+	<!-- ADMIN DATA POSTAL  -->
+	<definition name="adminDataPostal" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/data/l_postal.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/data/postal.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/data/s_postal.jsp" />
+	</definition>
+	
+	<!-- ADMIN DATA SOCIAL  -->
+	<definition name="adminDataSocial" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/data/l_social.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/data/social.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/data/s_social.jsp" />
+	</definition>
+	
+	<!-- ADMIN FEEDBACK REPORTS  -->
+	<definition name="adminFeedbackReoprts" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/feedback/l_reports.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/feedback/reports.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/feedback/s_reports.jsp" />
+	</definition>
+	
+	<!-- ADMIN FEEDBACK RATES  -->
+	<definition name="adminFeedbackRates" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/feedback/l_rates.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/feedback/rates.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/feedback/s_rates.jsp" />
+	</definition>
+	
+	<!-- ADMIN FEEDBACK LOCKS  -->
+	<definition name="adminFeedbackLocks" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/feedback/l_locks.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/feedback/locks.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/feedback/s_locks.jsp" />
+	</definition>
+	
+	<!-- ADMIN FEEDBACK BLOCKS  -->
+	<definition name="adminFeedbackBlocks" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/feedback/l_blocks.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/feedback/blocks.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/feedback/s_blocks.jsp" />
+	</definition>
+	
+	<!-- ADMIN PREMIUM SUBSCRIBES  -->
+	<definition name="adminPremiumSubscribes" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/premium/l_subscribes.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/premium/subscribes.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/premium/s_subscribes.jsp" />
+	</definition>
+	
+	<!-- ADMIN PREMIUM SUBSCRIBE  -->
+	<definition name="adminPremiumSubscribe" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/premium/l_subscribe.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/premium/subscribe.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/premium/s_subscribe.jsp" />
+	</definition>
+	
+	<!-- ADMIN PREMIUM ORDERS  -->
+	<definition name="adminPremiumOrders" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/premium/l_orders.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/premium/orders.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/premium/s_orders.jsp" />
+	</definition>
+	
+	<!-- ADMIN PREMIUM ORDER  -->
+	<definition name="adminPremiumOrder" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/premium/l_order.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/premium/order.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/premium/s_order.jsp" />
+	</definition>
+	
+	<!-- ADMIN PREMIUM FORMULE  -->
+	<definition name="adminPremiumFormule" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/premium/l_formule.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/premium/formule.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/premium/s_formule.jsp" />
+	</definition>
+	
+	<!-- ADMIN PREMIUM EMAILINGS  -->
+	<definition name="adminPremiumEmailings" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/premium/l_emailings.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/premium/emailings.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/premium/s_emailings.jsp" />
+	</definition>
+	
+	<!-- ADMIN PREMIUM EMAILING  -->
+	<definition name="adminPremiumEmailing" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/premium/l_emailing.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/premium/emailing.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/premium/s_emailing.jsp" />
+	</definition>
+	
+	<!-- ADMIN PREMIUM BUDGETS  -->
+	<definition name="adminPremiumBudgets" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/premium/l_budgets.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/premium/budgets.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/premium/s_budgets.jsp" />
+	</definition>
+	
+	<!-- ADMIN PREMIUM BUDGET  -->
+	<definition name="adminPremiumBudget" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/premium/l_budget.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/premium/budget.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/premium/s_budget.jsp" />
+	</definition>
+	
+	<!-- ADMIN REALTIME COMPANIES  -->
+	<definition name="adminRealtimeCompanies" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/realtime/l_companies.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/realtime/companies.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/realtime/s_companies.jsp" />
+	</definition>
+	
+	<!-- ADMIN REALTIME USERS  -->
+	<definition name="adminRealtimeUsers" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/realtime/l_users.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/realtime/users.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/realtime/s_users.jsp" />
+	</definition>
+	
+	<!-- ADMIN REALTIME TESTIMONILAS  -->
+	<definition name="adminRealtimeTestimonials" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/realtime/l_testimonials.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/realtime/testimonials.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/realtime/s_testimonials.jsp" />
+	</definition>
+	
+	<!-- ADMIN REALTIME TESTIMONILA  -->
+	<definition name="adminRealtimeTestimonial" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/realtime/l_testimonial.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/realtime/testimonial.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/realtime/s_testimonial.jsp" />
+	</definition>
+	
+	<!-- ADMIN REALTIME ASSISTS  -->
+	<definition name="adminRealtimeAssists" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/realtime/l_assists.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/realtime/assists.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/realtime/s_assists.jsp" />
+	</definition>
+	
+	<!-- ADMIN REALTIME PROBLEMS  -->
+	<definition name="adminRealtimeProblems" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/realtime/l_problems.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/realtime/problems.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/realtime/s_problems.jsp" />
+	</definition>
+	
+	<!-- ADMIN REALTIME CONTACTS  -->
+	<definition name="adminRealtimeContacts" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/realtime/l_contacts.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/realtime/contacts.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/realtime/s_contacts.jsp" />
+	</definition>
+	
+	<!-- ADMIN REALTIME CONTACT  -->
+	<definition name="adminRealtimeContact" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/realtime/l_contact.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/realtime/contact.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/realtime/s_contact.jsp" />
+	</definition>
+	
+	<!-- ADMIN REALTIME CHATBOTS  -->
+	<definition name="adminRealtimeChatbots" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/realtime/l_chatbots.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/realtime/chatbots.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/realtime/s_chatbots.jsp" />
+	</definition>
+	
+	<!-- ADMIN REALTIME CHATBOT  -->
+	<definition name="adminRealtimeChatbot" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/realtime/l_chatbot.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/realtime/chatbot.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/realtime/s_chatbot.jsp" />
+	</definition>
+	
+	<!-- ADMIN TEAM USERS  -->
+	<definition name="adminTeamUsers" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/team/l_users.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/team/users.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/team/s_users.jsp" />
+	</definition>
+	
+	<!-- ADMIN TEAM USER  -->
+	<definition name="adminTeamUser" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/team/l_user.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/team/user.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/team/s_user.jsp" />
+	</definition>
+	
+	<!-- ADMIN TEAM MODERATORS  -->
+	<definition name="adminTeamModerators" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/team/l_moderators.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/team/moderators.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/team/s_moderators.jsp" />
+	</definition>
+	
+	<!-- ADMIN TEAM MANAGERS  -->
+	<definition name="adminTeamManagers" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/team/l_managers.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/team/managers.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/team/s_managers.jsp" />
+	</definition>
+	
+	<!-- ADMIN TEAM MANAGER  -->
+	<definition name="adminTeamManager" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/team/l_manager.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/team/manager.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/team/s_manager.jsp" />
+	</definition>
+	
+	<!-- ADMIN COMMUNICATION CHATER  -->
+	<definition name="adminCommunicationChater" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/communication/l_chater.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/communication/chater.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/communication/s_chater.jsp" />
+	</definition>
+	
+	<!-- ADMIN COMMUNICATION MESSAGE  -->
+	<definition name="adminCommunicationMessage" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/communication/l_message.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/communication/message.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/communication/s_message.jsp" />
+	</definition>
+	
+	<!-- ADMIN COMMUNICATION CONTACT  -->
+	<definition name="adminCommunicationContact" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/communication/l_contact.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/communication/contact.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/communication/s_contact.jsp" />
+	</definition>
+	
+	<!-- ADMIN COMMUNICATION APPOINT  -->
+	<definition name="adminCommunicationAppoint" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/communication/l_appoint.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/communication/appoint.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/communication/s_appoint.jsp" />
+	</definition>
+	
+	<!-- ADMIN COMMUNICATION NOTICE  -->
+	<definition name="adminCommunicationNotice" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/communication/l_notice.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/communication/notice.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/communication/s_notice.jsp" />
+	</definition>
+	
+	<!-- ADMIN COMMUNICATION GUEST  -->
+	<definition name="adminCommunicationGuest" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/communication/l_guest.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/communication/guest.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/communication/s_guest.jsp" />
+	</definition>
+	
+	<!-- ADMIN COMMUNICATION NEWSLETTER  -->
+	<definition name="adminCommunicationNewsletter" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/communication/l_newsletter.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/communication/newsletter.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/communication/s_newsletter.jsp" />
+	</definition>
+	
+	<!-- ADMIN COMMUNICATION CHATBOT  -->
+	<definition name="adminCommunicationChatbot" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/communication/l_chatbot.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/communication/chatbot.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/communication/s_chatbot.jsp" />
+	</definition>
+	
+	<!-- ADMIN MAILING NEWSLETTER  -->
+	<definition name="adminMailingNewsletter" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/mailing/l_newsletter.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/mailing/newsletter.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/mailing/s_newsletter.jsp" />
+	</definition>
+	
+	<!-- ADMIN MAILING MARKETPLACE  -->
+	<definition name="adminMailingMarketplace" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/mailing/l_marketplace.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/mailing/marketplace.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/mailing/s_marketplace.jsp" />
+	</definition>
+	
+	<!-- ADMIN MAILING ACTUALITIES  -->
+	<definition name="adminMailingActualities" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/mailing/l_actualities.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/mailing/actualities.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/mailing/s_actualities.jsp" />
+	</definition>
+	
+	<!-- ADMIN EASYLIST COMPANIES  -->
+	<definition name="adminEasylistCompanies" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/easylist/l_companies.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/easylist/companies.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/easylist/s_companies.jsp" />
+	</definition>
+	
+	<!-- ADMIN EASYLIST DOCUMENTS  -->
+	<definition name="adminEasylistDocuments" extends="admin">
+		<put-attribute name="link" value="/WEB-INF/links/admin/easylist/l_documents.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/admin/easylist/documents.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/admin/easylist/s_documents.jsp" />
+	</definition>
+	
+</tiles-definitions>

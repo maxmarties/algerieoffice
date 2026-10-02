@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	
+	<definition name="explorerAgentList" template="/WEB-INF/tempajax/explorer/explorerlist_agents.jsp"></definition>
+	<definition name="explorerNoticeList" template="/WEB-INF/tempajax/explorer/explorerlist_notices.jsp"></definition>
+	<definition name="explorerActuList" template="/WEB-INF/tempajax/explorer/explorerlist_actus.jsp"></definition>
+	<definition name="explorerEventList" template="/WEB-INF/tempajax/explorer/explorerlist_events.jsp"></definition>
+	<definition name="explorerWorkList" template="/WEB-INF/tempajax/explorer/explorerlist_works.jsp"></definition>
+	<definition name="explorerFaqList" template="/WEB-INF/tempajax/explorer/explorerlist_faqs.jsp"></definition>
+	<definition name="explorerPartnerList" template="/WEB-INF/tempajax/explorer/explorerlist_partners.jsp"></definition>
+	<definition name="explorerPostList" template="/WEB-INF/tempajax/explorer/explorerlist_posts.jsp"></definition>
+	<definition name="explorerAnnonceList" template="/WEB-INF/tempajax/explorer/explorerlist_annonces.jsp"></definition>
+	<definition name="explorerEmployeList" template="/WEB-INF/tempajax/explorer/explorerlist_employes.jsp"></definition>
+	
+</tiles-definitions>
+       

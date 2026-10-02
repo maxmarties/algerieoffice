@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	
+	<!-- HOME -->
+	<definition name="home" template="/WEB-INF/pages/home/layout.jsp">
+        <put-attribute name="meta" value="/WEB-INF/tags/meta_website.jsp" />
+		<put-attribute name="link" value="" />
+		<put-attribute name="load" value="/WEB-INF/basics/loading_home.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/menus/menu_home.jsp" />
+		<put-attribute name="aside" value="/WEB-INF/asides/aside_explorer.jsp" />
+		<put-attribute name="banner" value="" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/footers/footer_home.jsp" />
+        <put-attribute name="chatbot" value="/WEB-INF/chats/chatbot_home.jsp" />
+        <put-attribute name="chater" value="/WEB-INF/chats/chater_public.jsp" />
+        <put-attribute name="privacy" value="/WEB-INF/dialogs/dialog_privacy.jsp" />
+        <put-attribute name="dialog" value="" />
+        <put-attribute name="script" value="" />
+	</definition>
+	
+	<!-- HOME PAGE -->
+	<definition name="homeIndex" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/l_home.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/home.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/s_home.jsp" />
+	</definition>
+	
+	<definition name="homeCompanies" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/search/l_home.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/search/home.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/search/s_home.jsp" />
+	</definition>
+	
+	<!-- HOME SECTORS -->
+	<definition name="homeSectors" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/sectors/l_sectors.jsp" />
+		<put-attribute name="banner" value="/WEB-INF/basics/sidebar_banner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/sectors/sectors.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/sectors/s_sectors.jsp" />
+	</definition>
+	
+	<!-- HOME SECTOR -->
+	<definition name="homeSector" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/sectors/l_sector.jsp" />
+		<put-attribute name="banner" value="/WEB-INF/basics/sidebar_banner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/sectors/sector.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/sectors/s_sector.jsp" />
+	</definition>
+	
+	<!-- HOME SECTOR ACTIVITY -->
+	<definition name="homeSectorActivity" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/sectors/l_activity.jsp" />
+		<put-attribute name="banner" value="/WEB-INF/basics/sidebar_banner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/sectors/activity.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/sectors/s_activity.jsp" />
+	</definition>
+	
+	<!-- HOME SECTOR WILAYA -->
+	<definition name="homeSectorWilaya" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/sectors/l_wilaya.jsp" />
+		<put-attribute name="banner" value="/WEB-INF/basics/sidebar_banner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/sectors/wilaya.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_screen.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/sectors/s_wilaya.jsp" />
+	</definition>
+	
+	<!-- HOME WILAYAS -->
+	<definition name="homeWilayas" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/wilayas/l_wilayas.jsp" />
+		<put-attribute name="banner" value="/WEB-INF/basics/sidebar_banner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/wilayas/wilayas.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/wilayas/s_wilayas.jsp" />
+	</definition>
+	
+	<!-- HOME WILAYA -->
+	<definition name="homeWilaya" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/wilayas/l_wilaya.jsp" />
+		<put-attribute name="banner" value="/WEB-INF/basics/sidebar_banner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/wilayas/wilaya.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/wilayas/s_wilaya.jsp" />
+	</definition>
+	
+	<!-- HOME WILAYA SECTOR -->
+	<definition name="homeWilayaSector" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/wilayas/l_sector.jsp" />
+		<put-attribute name="banner" value="/WEB-INF/basics/sidebar_banner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/wilayas/sector.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/wilayas/s_sector.jsp" />
+	</definition>
+	
+	<!-- HOME WILAYA ACTIVITY -->
+	<definition name="homeWilayaActivity" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/wilayas/l_activity.jsp" />
+		<put-attribute name="banner" value="/WEB-INF/basics/sidebar_banner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/wilayas/activity.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_screen.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/wilayas/s_activity.jsp" />
+	</definition>
+	
+	<!-- HOME SEARCH COMPANIES -->
+	<definition name="homeSearchCompanies" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/search/l_companies.jsp" />
+		<put-attribute name="banner" value="/WEB-INF/basics/sidebar_banner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/search/companies.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_screen.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/search/s_companies.jsp" />
+	</definition>
+	
+	<!-- HOME SEARCH COMPANY -->
+	<definition name="homeSearchCompany" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/search/l_company.jsp" />
+		<put-attribute name="banner" value="/WEB-INF/basics/sidebar_banner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/search/company.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_screen.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/search/s_company.jsp" />
+	</definition>
+	
+	<!-- HOME SEARCH QUICKLY -->
+	<definition name="homeSearchQuickly" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/search/l_quickly.jsp" />
+		<put-attribute name="banner" value="/WEB-INF/basics/sidebar_banner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/search/quickly.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_screen.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/search/s_quickly.jsp" />
+	</definition>
+	
+	<!-- HOME MARKETPLACE -->
+	<definition name="homeMarketplace" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/marketplace/l_home.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/marketplace/home.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/marketplace/s_home.jsp" />
+	</definition>
+	
+	<!-- HOME MARKETPLACE POSTS -->
+	<definition name="homeMarketplacePosts" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/marketplace/l_posts.jsp" />
+		<put-attribute name="banner" value="/WEB-INF/basics/sidebar_banner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/marketplace/posts.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_easylist.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/marketplace/s_posts.jsp" />
+	</definition>
+	
+	<!-- HOME MARKETPLACE POST -->
+	<definition name="homeMarketplacePost" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/marketplace/l_post.jsp" />
+		<put-attribute name="banner" value="/WEB-INF/basics/sidebar_banner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/marketplace/post.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_login.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/marketplace/s_post.jsp" />
+	</definition>
+	
+	<!-- HOME MARKETPLACE ANNONCES -->
+	<definition name="homeMarketplaceAnnonces" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/marketplace/l_annonces.jsp" />
+		<put-attribute name="banner" value="/WEB-INF/basics/sidebar_banner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/marketplace/annonces.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_easylist.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/marketplace/s_annonces.jsp" />
+	</definition>
+	
+	<!-- HOME MARKETPLACE ANNONCE -->
+	<definition name="homeMarketplaceAnnonce" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/marketplace/l_annonce.jsp" />
+		<put-attribute name="banner" value="/WEB-INF/basics/sidebar_banner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/marketplace/annonce.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_login.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/marketplace/s_annonce.jsp" />
+	</definition>
+	
+	<!-- HOME MARKETPLACE EVENTS -->
+	<definition name="homeMarketplaceEvents" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/marketplace/l_events.jsp" />
+		<put-attribute name="banner" value="/WEB-INF/basics/sidebar_banner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/marketplace/events.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_easylist.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/marketplace/s_events.jsp" />
+	</definition>
+	
+	<!-- HOME MARKETPLACE EVENT -->
+	<definition name="homeMarketplaceEvent" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/marketplace/l_event.jsp" />
+		<put-attribute name="banner" value="/WEB-INF/basics/sidebar_banner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/marketplace/event.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_login.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/marketplace/s_event.jsp" />
+	</definition>
+	
+	<!-- HOME MARKETPLACE EMPLOYES -->
+	<definition name="homeMarketplaceEmployes" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/marketplace/l_employes.jsp" />
+		<put-attribute name="banner" value="/WEB-INF/basics/sidebar_banner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/marketplace/employes.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_easylist.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/marketplace/s_employes.jsp" />
+	</definition>
+	
+	<!-- HOME MARKETPLACE EMPLOYE -->
+	<definition name="homeMarketplaceEmploye" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/marketplace/l_employe.jsp" />
+		<put-attribute name="banner" value="/WEB-INF/basics/sidebar_banner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/marketplace/employe.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_login.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/marketplace/s_employe.jsp" />
+	</definition>
+	
+	<!-- HOME MARKETPLACE ACTUS -->
+	<definition name="homeMarketplaceActus" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/marketplace/l_actus.jsp" />
+		<put-attribute name="banner" value="/WEB-INF/basics/sidebar_banner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/marketplace/actus.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_login.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/marketplace/s_actus.jsp" />
+	</definition>
+	
+	<!-- HOME MARKETPLACE ACTU -->
+	<definition name="homeMarketplaceActu" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/marketplace/l_actu.jsp" />
+		<put-attribute name="banner" value="/WEB-INF/basics/sidebar_banner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/marketplace/actu.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_login.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/marketplace/s_actu.jsp" />
+	</definition>
+	
+	<!-- HOME MEMBERS -->
+	<definition name="homeMembers" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/members/l_members.jsp" />
+		<put-attribute name="banner" value="/WEB-INF/basics/sidebar_banner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/members/members.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_login.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/members/s_members.jsp" />
+	</definition>
+	
+	<!-- HOME MEMBER -->
+	<definition name="homeMember" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/members/l_member.jsp" />
+		<put-attribute name="banner" value="/WEB-INF/basics/sidebar_banner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/members/member.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_member.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/members/s_member.jsp" />
+	</definition>
+	
+	<!-- HOME SOLUTIONS -->
+	<definition name="homeSolutions" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/solution/l_home.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/solution/home.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/solution/s_home.jsp" />
+	</definition>
+	
+	<!-- HOME SOLUTIONS TOURE -->
+	<definition name="homeSolutionTours" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/solution/l_tours.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/solution/tours.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/solution/s_tours.jsp" />
+	</definition>
+	
+	<!-- HOME SOLUTIONS VISIBILITY -->
+	<definition name="homeSolutionVisibility" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/solution/l_visibility.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/solution/visibility.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/solution/s_visibility.jsp" />
+	</definition>
+	
+	<!-- HOME SOLUTIONS STORE -->
+	<definition name="homeSolutionStore" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/solution/l_store.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/solution/store.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/solution/s_store.jsp" />
+	</definition>
+	
+	<!-- HOME SOLUTIONS DETECT -->
+	<definition name="homeSolutionDetect" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/solution/l_detect.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/solution/detect.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/solution/s_detect.jsp" />
+	</definition>
+	
+	<!-- HOME SOLUTIONS EASYLIST -->
+	<definition name="homeSolutionEasylist" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/solution/l_easylist.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/solution/easylist.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/solution/s_easylist.jsp" />
+	</definition>
+	
+	<!-- HOME SOLUTIONS ADS -->
+	<definition name="homeSolutionAds" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/solution/l_ads.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/solution/ads.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/solution/s_ads.jsp" />
+	</definition>
+	
+	<!-- HOME CONTACT -->
+	<definition name="homeContact" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/l_contact.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/contact.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/s_contact.jsp" />
+	</definition>
+	
+	<!-- HOME INFOS MAPSITE -->
+	<definition name="homeInfosMapsite" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/infos/l_mapsite.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/infos/mapsite.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/infos/s_mapsite.jsp" />
+	</definition>
+	
+	<!-- HOME INFOS MENTION -->
+	<definition name="homeInfosMention" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/infos/l_mention.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/infos/mention.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/infos/s_mention.jsp" />
+	</definition>
+	
+	<!-- HOME INFOS MENTION -->
+	<definition name="homeInfosPolitic" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/infos/l_politic.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/infos/politic.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/infos/s_politic.jsp" />
+	</definition>
+	
+	<!-- HOME INFOS CONDITION -->
+	<definition name="homeInfosCondition" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/infos/l_condition.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/infos/condition.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/infos/s_condition.jsp" />
+	</definition>
+	
+	<!-- HOME INFOS FAQ -->
+	<definition name="homeInfosFaq" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/infos/l_faq.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/infos/faq.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/infos/s_faq.jsp" />
+	</definition>
+	
+	<!-- HOME INFOS CHART -->
+	<definition name="homeInfosChart" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/infos/l_chart.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/infos/chart.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/infos/s_chart.jsp" />
+	</definition>
+	
+	<!-- HOME INFOS CREDIT -->
+	<definition name="homeInfosCredit" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/infos/l_credit.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/infos/credit.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/infos/s_credit.jsp" />
+	</definition>
+	
+	<!-- HOME INFOS TESTIMONIES -->
+	<definition name="homeInfosTestimonies" extends="home">
+		<put-attribute name="link" value="/WEB-INF/links/home/infos/l_testimonies.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/home/infos/testimonies.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/home/infos/s_testimonies.jsp" />
+	</definition>
+	
+	
+</tiles-definitions>

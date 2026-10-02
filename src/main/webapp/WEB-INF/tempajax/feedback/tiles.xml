@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	
+	<definition name="explorerFeedbackPromote" template="/WEB-INF/tempajax/feedback/feedback_promote.jsp"></definition>
+	<definition name="explorerFeedbackSponsore" template="/WEB-INF/tempajax/feedback/feedback_sponsore.jsp"></definition>
+	<definition name="explorerFeedbackSimultude" template="/WEB-INF/tempajax/feedback/feedback_simultude.jsp"></definition>
+	<definition name="explorerFeedbackCampaign" template="/WEB-INF/tempajax/feedback/feedback_campaign.jsp"></definition>
+	
+</tiles-definitions>
+       

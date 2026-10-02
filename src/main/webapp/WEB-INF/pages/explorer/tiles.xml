@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	
+	<!-- EXPLORER  -->
+	<definition name="explorer" template="/WEB-INF/pages/explorer/layout.jsp">
+		<put-attribute name="meta" value="/WEB-INF/tags/meta_explorer.jsp" />
+		<put-attribute name="link" value="" />
+		<put-attribute name="load" value="/WEB-INF/basics/loading_explorer.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/menus/menu_explorer.jsp" />
+		<put-attribute name="aside" value="/WEB-INF/asides/aside_explorer.jsp" />
+		<put-attribute name="mainheader" value="/WEB-INF/explorer/mainheader.jsp" />
+		<put-attribute name="mainmenu" value="/WEB-INF/explorer/mainmenu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/explorer/mainfooter.jsp" />
+		<put-attribute name="chatbot" value="/WEB-INF/chats/chatbot_explorer.jsp" />
+		<put-attribute name="chater" value="/WEB-INF/chats/chater_public.jsp" />
+		<put-attribute name="dialog" value="" />
+		<put-attribute name="script" value="" />
+	</definition>
+	
+	<!-- PREVIEW HOME  -->
+	<definition name="explorerPreviewHome" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/preview/l_home.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/preview/home.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/preview/s_home.jsp" />
+	</definition>
+	
+	<!-- PREVIEW PRESENTATION  -->
+	<definition name="explorerPreviewPresentation" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/preview/l_presentation.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/preview/presentation.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/preview/s_presentation.jsp" />
+	</definition>
+	
+	<!-- PREVIEW TIMELINE  -->
+	<definition name="explorerPreviewTimeline" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/preview/l_timeline.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/preview/timeline.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/preview/s_timeline.jsp" />
+	</definition>
+	
+	<!-- PREVIEW ACTUS  -->
+	<definition name="explorerPreviewActus" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/preview/l_actus.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/preview/actus.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/preview/s_actus.jsp" />
+	</definition>
+	
+	<!-- PREVIEW EVENTS  -->
+	<definition name="explorerPreviewEvents" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/preview/l_events.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/preview/events.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/preview/s_events.jsp" />
+	</definition>
+	
+	<!-- PREVIEW EVENT  -->
+	<definition name="explorerPreviewEvent" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/preview/l_event.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/preview/event.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/preview/s_event.jsp" />
+	</definition>
+	
+	<!-- PREVIEW WORKS  -->
+	<definition name="explorerPreviewWorks" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/preview/l_works.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/preview/works.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/preview/s_works.jsp" />
+	</definition>
+	
+	<!-- PREVIEW WORK  -->
+	<definition name="explorerPreviewWork" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/preview/l_work.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/preview/work.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/preview/s_work.jsp" />
+	</definition>
+	
+	<!-- PREVIEW FAQS  -->
+	<definition name="explorerPreviewFaqs" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/preview/l_faqs.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/preview/faqs.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/preview/s_faqs.jsp" />
+	</definition>
+	
+	<!-- PREVIEW PARTNERS  -->
+	<definition name="explorerPreviewPartners" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/preview/l_partners.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/preview/partners.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/preview/s_partners.jsp" />
+	</definition>
+	
+	<!-- PREVIEW POSTS  -->
+	<definition name="explorerPreviewPosts" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/preview/l_posts.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/preview/posts.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/preview/s_posts.jsp" />
+	</definition>
+	
+	<!-- PREVIEW POST  -->
+	<definition name="explorerPreviewPost" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/preview/l_post.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/preview/post.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/preview/s_post.jsp" />
+	</definition>
+	
+	<!-- PREVIEW ANNONCES  -->
+	<definition name="explorerPreviewAnnonces" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/preview/l_annonces.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/preview/annonces.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/preview/s_annonces.jsp" />
+	</definition>
+	
+	<!-- PREVIEW ANNONCE  -->
+	<definition name="explorerPreviewAnnonce" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/preview/l_annonce.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/preview/annonce.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/preview/s_annonce.jsp" />
+	</definition>
+	
+	<!-- PREVIEW EMPLOYES  -->
+	<definition name="explorerPreviewEmployes" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/preview/l_employes.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/preview/employes.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/preview/s_employes.jsp" />
+	</definition>
+	
+	<!-- PREVIEW EMPLOYE  -->
+	<definition name="explorerPreviewEmploye" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/preview/l_employe.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/preview/employe.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/preview/s_employe.jsp" />
+	</definition>
+	
+	<!-- PREVIEW CONTACT  -->
+	<definition name="explorerPreviewContact" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/preview/l_contact.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/preview/contact.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/preview/s_contact.jsp" />
+	</definition>
+	
+	<!-- PREVIEW 404  -->
+	<definition name="explorerPreview404" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/preview/l_404.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/preview/404.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/preview/s_404.jsp" />
+	</definition>
+	
+	<!-- BROWSER HOME  -->
+	<definition name="explorerBrowserHome" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/browser/l_home.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/browser/home.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_browser.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/browser/s_home.jsp" />
+	</definition>
+	
+	<!-- BROWSER PRESENTATION  -->
+	<definition name="explorerBrowserPresentation" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/browser/l_presentation.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/browser/presentation.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_browser.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/browser/s_presentation.jsp" />
+	</definition>
+	
+	<!-- BROWSER TIMELINE  -->
+	<definition name="explorerBrowserTimeline" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/browser/l_timeline.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/browser/timeline.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_browser.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/browser/s_timeline.jsp" />
+	</definition>
+	
+	<!-- BROWSER ACTUS  -->
+	<definition name="explorerBrowserActus" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/browser/l_actus.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/browser/actus.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_browser.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/browser/s_actus.jsp" />
+	</definition>
+	
+	<!-- BROWSER EVENTS  -->
+	<definition name="explorerBrowserEvents" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/browser/l_events.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/browser/events.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_browser.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/browser/s_events.jsp" />
+	</definition>
+	
+	<!-- BROWSER EVENT  -->
+	<definition name="explorerBrowserEvent" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/browser/l_event.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/browser/event.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_browser.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/browser/s_event.jsp" />
+	</definition>
+	
+	<!-- BROWSER WORKS  -->
+	<definition name="explorerBrowserWorks" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/browser/l_works.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/browser/works.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_browser.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/browser/s_works.jsp" />
+	</definition>
+	
+	<!-- BROWSER WORK  -->
+	<definition name="explorerBrowserWork" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/browser/l_work.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/browser/work.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_browser.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/browser/s_work.jsp" />
+	</definition>
+	
+	<!-- BROWSER FAQS  -->
+	<definition name="explorerBrowserFaqs" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/browser/l_faqs.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/browser/faqs.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_browser.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/browser/s_faqs.jsp" />
+	</definition>
+	
+	<!-- BROWSER PARTNERS  -->
+	<definition name="explorerBrowserPartners" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/browser/l_partners.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/browser/partners.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_browser.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/browser/s_partners.jsp" />
+	</definition>
+	
+	<!-- BROWSER POSTS  -->
+	<definition name="explorerBrowserPosts" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/browser/l_posts.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/browser/posts.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_browser.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/browser/s_posts.jsp" />
+	</definition>
+	
+	<!-- BROWSER POST  -->
+	<definition name="explorerBrowserPost" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/browser/l_post.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/browser/post.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_browser.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/browser/s_post.jsp" />
+	</definition>
+	
+	<!-- BROWSER ANNONCES  -->
+	<definition name="explorerBrowserAnnonces" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/browser/l_annonces.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/browser/annonces.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_browser.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/browser/s_annonces.jsp" />
+	</definition>
+	
+	<!-- BROWSER ANNONCE  -->
+	<definition name="explorerBrowserAnnonce" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/browser/l_annonce.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/browser/annonce.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_browser.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/browser/s_annonce.jsp" />
+	</definition>
+	
+	<!-- BROWSER EMPLOYES  -->
+	<definition name="explorerBrowserEmployes" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/browser/l_employes.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/browser/employes.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_browser.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/browser/s_employes.jsp" />
+	</definition>
+	
+	<!-- BROWSER EMPLOYE  -->
+	<definition name="explorerBrowserEmploye" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/browser/l_employe.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/browser/employe.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_browser.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/browser/s_employe.jsp" />
+	</definition>
+	
+	<!-- BROWSER CONTACT  -->
+	<definition name="explorerBrowserContact" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/browser/l_contact.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/browser/contact.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_browser.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/browser/s_contact.jsp" />
+	</definition>
+	
+	<!-- BROWSER 404  -->
+	<definition name="explorerBrowser404" extends="explorer">
+		<put-attribute name="link" value="/WEB-INF/links/explorer/browser/l_404.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/explorer/browser/404.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_browser.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/explorer/browser/s_404.jsp" />
+	</definition>
+	
+</tiles-definitions>

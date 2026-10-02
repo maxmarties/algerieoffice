@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	
+	<!-- USER -->
+	<definition name="user" template="/WEB-INF/pages/user/layout.jsp">
+        <put-attribute name="meta" value="/WEB-INF/tags/meta_admin.jsp" />
+		<put-attribute name="link" value="" />
+		<put-attribute name="menu" value="/WEB-INF/menus/menu_user.jsp" />
+		<put-attribute name="aside" value="/WEB-INF/asides/aside_user.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/footers/footer_dashboard.jsp" />
+        <put-attribute name="support" value="/WEB-INF/chats/chater_support.jsp" />
+        <put-attribute name="chater" value="/WEB-INF/chats/chater_public.jsp" />
+        <put-attribute name="dialog" value="" />
+        <put-attribute name="script" value="" />
+	</definition>
+	
+	<!-- USER DASHBOARD  -->
+	<definition name="userDashboard" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/dashboard/l_dashboard.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/dashboard/dashboard.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_started.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/dashboard/s_dashboard.jsp" />
+	</definition>
+	
+	<!-- USER HISTORY  -->
+	<definition name="userHistory" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/dashboard/l_history.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/dashboard/history.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/dashboard/s_history.jsp" />
+	</definition>
+	
+	<!-- USER ADD COMPANY  -->
+	<definition name="userAddCompany" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/dashboard/l_addcompany.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/dashboard/addcompany.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/dashboard/s_addcompany.jsp" />
+	</definition>
+	
+	<!-- USER GLOBE COMPANIES  -->
+	<definition name="userGlobeCompanies" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/globe/l_companies.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/globe/companies.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/globe/s_companies.jsp" />
+	</definition>
+	
+	<!-- USER GLOBE PROFILES  -->
+	<definition name="userGlobeProfiles" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/globe/l_profiles.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/globe/profiles.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/globe/s_profiles.jsp" />
+	</definition>
+	
+	<!-- USER FAVORITE POSTS  -->
+	<definition name="userFavoritePosts" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/favorite/l_posts.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/favorite/posts.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/favorite/s_posts.jsp" />
+	</definition>
+	
+	<!-- USER FAVORITE ANNONCES  -->
+	<definition name="userFavoriteAnnonces" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/favorite/l_annonces.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/favorite/annonces.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/favorite/s_annonces.jsp" />
+	</definition>
+	
+	<!-- USER FAVORITE EVENTS  -->
+	<definition name="userFavoriteEvents" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/favorite/l_events.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/favorite/events.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/favorite/s_events.jsp" />
+	</definition>
+	
+	<!-- USER FAVORITE EMPLOYES  -->
+	<definition name="userFavoriteEmployes" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/favorite/l_employes.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/favorite/employes.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/favorite/s_employes.jsp" />
+	</definition>
+	
+	<!-- USER ALERT POSTS  -->
+	<definition name="userAlertPosts" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/alerts/l_posts.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/alerts/posts.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/alerts/s_posts.jsp" />
+	</definition>
+	
+	<!-- USER ALERT POST  -->
+	<definition name="userAlertPost" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/alerts/l_post.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/alerts/post.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/alerts/s_post.jsp" />
+	</definition>
+	
+	<!-- USER ALERT ANNONCES  -->
+	<definition name="userAlertAnnonces" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/alerts/l_annonces.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/alerts/annonces.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/alerts/s_annonces.jsp" />
+	</definition>
+	
+	<!-- USER ALERT ANNONCE  -->
+	<definition name="userAlertAnnonce" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/alerts/l_annonce.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/alerts/annonce.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/alerts/s_annonce.jsp" />
+	</definition>
+	
+	<!-- USER ALERT EVENTS  -->
+	<definition name="userAlertEvents" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/alerts/l_events.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/alerts/events.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/alerts/s_events.jsp" />
+	</definition>
+	
+	<!-- USER ALERT EVENT  -->
+	<definition name="userAlertEvent" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/alerts/l_event.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/alerts/event.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/alerts/s_event.jsp" />
+	</definition>
+	
+	<!-- USER ALERT EMPLOYES  -->
+	<definition name="userAlertEmployes" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/alerts/l_employes.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/alerts/employes.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/alerts/s_employes.jsp" />
+	</definition>
+	
+	<!-- USER ALERT EMPLOYE -->
+	<definition name="userAlertEmploye" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/alerts/l_employe.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/alerts/employe.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/alerts/s_employe.jsp" />
+	</definition>
+	
+	<!-- USER EASYLIST COMPANIES  -->
+	<definition name="userEasylistCompanies" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/easylist/l_companies.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/easylist/companies.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/easylist/s_companies.jsp" />
+	</definition>
+	
+	<!-- USER EASYLIST COMPANY  -->
+	<definition name="userEasylistCompany" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/easylist/l_company.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/easylist/company.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/easylist/s_company.jsp" />
+	</definition>
+	
+	<!-- USER EASYLIST POSTS  -->
+	<definition name="userEasylistPosts" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/easylist/l_posts.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/easylist/posts.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/easylist/s_posts.jsp" />
+	</definition>
+	
+	<!-- USER EASYLIST POST  -->
+	<definition name="userEasylistPost" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/easylist/l_post.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/easylist/post.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/easylist/s_post.jsp" />
+	</definition>
+	
+	<!-- USER EASYLIST ANNONCES  -->
+	<definition name="userEasylistAnnonces" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/easylist/l_annonces.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/easylist/annonces.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/easylist/s_annonces.jsp" />
+	</definition>
+	
+	<!-- USER EASYLIST ANNONCE  -->
+	<definition name="userEasylistAnnonce" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/easylist/l_annonce.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/easylist/annonce.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/easylist/s_annonce.jsp" />
+	</definition>
+	
+	<!-- USER EASYLIST EVENTS  -->
+	<definition name="userEasylistEvents" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/easylist/l_events.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/easylist/events.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/easylist/s_events.jsp" />
+	</definition>
+	
+	<!-- USER EASYLIST EVENT  -->
+	<definition name="userEasylistEvent" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/easylist/l_event.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/easylist/event.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/easylist/s_event.jsp" />
+	</definition>
+	
+	<!-- USER EASYLIST EMPLOYES  -->
+	<definition name="userEasylistEmployes" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/easylist/l_employes.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/easylist/employes.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/easylist/s_employes.jsp" />
+	</definition>
+	
+	<!-- USER EASYLIST EMPLOYE  -->
+	<definition name="userEasylistEmploye" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/easylist/l_employe.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/easylist/employe.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/easylist/s_employe.jsp" />
+	</definition>
+	
+	<!-- USER COMMUNICATION NOTICES  -->
+	<definition name="userCommunicationNotices" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/communication/l_notices.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/communication/notices.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/communication/s_notices.jsp" />
+	</definition>
+	
+	<!-- USER COMMUNICATION APPOINTMENTS  -->
+	<definition name="userCommunicationAppoints" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/communication/l_appoints.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/communication/appoints.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/communication/s_appoints.jsp" />
+	</definition>
+	
+	<!-- USER COMMUNICATION EVALUATIONS  -->
+	<definition name="userCommunicationEvaluations" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/communication/l_evaluations.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/communication/evaluations.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/communication/s_evaluations.jsp" />
+	</definition>
+	
+	<!-- USER COMMUNICATION COMMENTS  -->
+	<definition name="userCommunicationComments" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/communication/l_comments.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/communication/comments.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/communication/s_comments.jsp" />
+	</definition>
+	
+	<!-- USER COMMUNICATION CONTRIBUTORS  -->
+	<definition name="userCommunicationContributors" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/communication/l_contributors.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/communication/contributors.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/communication/s_contributors.jsp" />
+	</definition>
+	
+	<!-- USER FEEDBACK MESSAGES  -->
+	<definition name="userFeedbackMessages" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/feedback/l_messages.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/feedback/messages.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/feedback/s_messages.jsp" />
+	</definition>
+	
+	<!-- USER FEEDBACK SENDERS  -->
+	<definition name="userFeedbackSenders" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/feedback/l_messages.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/feedback/senders.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/feedback/s_senders.jsp" />
+	</definition>
+	
+	<!-- USER FEEDBACK NOTIFICATIONS  -->
+	<definition name="userFeedbackNotifications" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/feedback/l_notifications.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/feedback/notifications.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/feedback/s_notifications.jsp" />
+	</definition>
+	
+	<!-- USER FEEDBACK COMMUNICATIONS  -->
+	<definition name="userFeedbackCommunications" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/feedback/l_communications.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/feedback/communications.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/feedback/s_communications.jsp" />
+	</definition>
+	
+	<!-- USER FEEDBACK SUPPORTS  -->
+	<definition name="userFeedbackSupports" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/feedback/l_supports.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/feedback/supports.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/feedback/s_supports.jsp" />
+	</definition>
+	
+	<!-- USER FEEDBACK SUPPORTS  -->
+	<definition name="userFeedbackResponses" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/feedback/l_supports.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/feedback/responses.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/feedback/s_responses.jsp" />
+	</definition>
+	
+	<!-- USER REPPORT TESTIMONIAL  -->
+	<definition name="userRepportTestimonial" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/repport/l_testimonial.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/repport/testimonial.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/repport/s_testimonial.jsp" />
+	</definition>
+	
+	<!-- USER REPPORT ASSIST  -->
+	<definition name="userRepportAssist" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/repport/l_assist.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/repport/assist.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/repport/s_assist.jsp" />
+	</definition>
+	
+	<!-- USER REPPORT PROBLEM  -->
+	<definition name="userRepportProblem" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/repport/l_problem.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/repport/problem.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/repport/s_problem.jsp" />
+	</definition>
+	
+	<!-- USER ACCOUNT PROFILE  -->
+	<definition name="userAccountProfile" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/account/l_profile.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/account/profile.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/account/s_profile.jsp" />
+	</definition>
+	
+	<!-- USER ACCOUNT COORDINATES  -->
+	<definition name="userAccountCoordinates" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/account/l_coordinates.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/account/coordinates.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/account/s_coordinates.jsp" />
+	</definition>
+	
+	<!-- USER ACCOUNT IDENTITIES  -->
+	<definition name="userAccountIdentities" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/account/l_identities.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/account/identities.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/account/s_identities.jsp" />
+	</definition>
+	
+	<!-- USER ACCOUNT LOGIN  -->
+	<definition name="userAccountLogin" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/account/l_login.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/account/login.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/account/s_login.jsp" />
+	</definition>
+	
+	<!-- USER ACCOUNT DEACTIVATE  -->
+	<definition name="userAccountDeactivate" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/account/l_deactivate.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/account/deactivate.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/account/s_deactivate.jsp" />
+	</definition>
+	
+	<!-- USER ACCOUNT HELP  -->
+	<definition name="userAccountHelp" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/account/l_help.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/account/help.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/account/s_help.jsp" />
+	</definition>
+	
+	<!-- USER SETTING GENERAL  -->
+	<definition name="userSettingGeneral" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/setting/l_general.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/setting/general.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/setting/s_general.jsp" />
+	</definition>
+	
+	<!-- USER SETTING NOTIFICATIONS  -->
+	<definition name="userSettingNotifications" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/setting/l_notifications.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/setting/notifications.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/setting/s_notifications.jsp" />
+	</definition>
+	
+	<!-- USER SETTING SECURITY  -->
+	<definition name="userSettingSecurity" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/setting/l_security.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/setting/security.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/setting/s_security.jsp" />
+	</definition>
+	
+	<!-- USER SETTING COOKIES  -->
+	<definition name="userSettingCookies" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/setting/l_cookies.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/setting/cookies.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/setting/s_cookies.jsp" />
+	</definition>
+	
+	<!-- USER SETTING BLACKLIST  -->
+	<definition name="userSettingBlacklist" extends="user">
+		<put-attribute name="link" value="/WEB-INF/links/user/setting/l_blacklist.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/user/setting/blacklist.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/user/setting/s_blacklist.jsp" />
+	</definition>
+	
+</tiles-definitions>

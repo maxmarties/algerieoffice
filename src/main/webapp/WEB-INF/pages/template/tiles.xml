@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	
+	<!-- POPUP -->
+	<definition name="socialPopup" template="/WEB-INF/pages/template/social_popup.jsp">
+		<put-attribute name="meta" value="/WEB-INF/tags/meta_popup.jsp" />
+	</definition>
+	
+	<!-- MAQUETTE -->
+	<definition name="maquette" template="/WEB-INF/pages/template/maquette.jsp">
+		<put-attribute name="meta" value="/WEB-INF/tags/meta_website.jsp" />
+	</definition>
+	
+	<!-- ERROR -->
+	<definition name="error" template="/WEB-INF/pages/template/layout.jsp">
+        <put-attribute name="meta" value="/WEB-INF/tags/meta_website.jsp" />
+		<put-attribute name="link" value="/WEB-INF/links/l_error.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/menus/menu_register.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/template/error.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/footers/footer_register.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/template/s_error.jsp" />
+	</definition>
+	
+	
+	
+</tiles-definitions>

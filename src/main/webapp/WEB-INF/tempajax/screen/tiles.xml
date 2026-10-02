@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	
+	<definition name="screenSectorCompanies" template="/WEB-INF/tempajax/screen/sector_companies.jsp"></definition>
+	<definition name="screenSearchCompanies" template="/WEB-INF/tempajax/screen/search_companies.jsp"></definition>
+	<definition name="screenSearchCompany" template="/WEB-INF/tempajax/screen/search_company.jsp"></definition>
+	<definition name="screenSearchCompanylogo" template="/WEB-INF/tempajax/screen/search_companylogo.jsp"></definition>
+	<definition name="screenSearchMembers" template="/WEB-INF/tempajax/screen/search_members.jsp"></definition>
+	<definition name="screenSearchB2C" template="/WEB-INF/tempajax/screen/search_b2c.jsp"></definition>
+	
+	<definition name="screenMarketplacePosts" template="/WEB-INF/tempajax/screen/search_posts.jsp"></definition>
+	<definition name="screenMarketplaceAnnonces" template="/WEB-INF/tempajax/screen/search_annonces.jsp"></definition>
+	<definition name="screenMarketplaceEmployes" template="/WEB-INF/tempajax/screen/search_employes.jsp"></definition>
+	<definition name="screenMarketplaceEvents" template="/WEB-INF/tempajax/screen/search_events.jsp"></definition>
+	<definition name="screenMarketplaceNews" template="/WEB-INF/tempajax/screen/search_news.jsp"></definition>
+	<definition name="screenMarketplaceComments" template="/WEB-INF/tempajax/screen/search_comments.jsp"></definition>
+	
+	<definition name="screenSimilarPosts" template="/WEB-INF/tempajax/screen/similar_posts.jsp"></definition>
+	<definition name="screenSimultudeDocuments" template="/WEB-INF/tempajax/screen/simultude_documents.jsp"></definition>
+	
+</tiles-definitions>
+       

@@ -1,0 +1,5 @@
+<%@ include file="/WEB-INF/tags/script/script_dashboard.jsp"%>
+<c:import url="/WEB-INF/tags/plugins/script_table.jsp"/>
+<script type="text/javascript">
+!function(a){"use strict";function o(r,n){var r=a(r),i=a.extend({},a.fn.scripform.defaults,n);this._init=function(){"true"==='<c:out value="${currentCompany.hasPremium()}" />'&&(r.scriplist({url:i.url}),a(i.loader).load(i.url+"-access",function(r,n,t){"error"===n&&(a(i.loader).append(a('<p class="i-error"><spring:message code="message.input.load" javaScriptEscape="true"/></p>')),a(i.loader).find(".span-loader").remove())}))}}var r=a.fn.scripform;a.fn.scripform=function(i){if("string"!=typeof i)return this.each(function(r){var n,t=a(this);t.data("scripform")||(n=new o(t,i),t.data("scripform",n),n._init())});var r=Array.prototype.slice.call(arguments,1);return 1===r.length&&(r=r.toString()),this.data("scripform")[i](r)},a.fn.scripform.Constructor=o,a.fn.scripform.noConflict=function(){return a.fn.scripform=r,this},a.fn.scripform.defaults={list:"#tableList",url:'<c:url value="/company/dashboard/journal"/>',loader:"#panelLoad"}}(jQuery),$(function(){$(".page-wrapper").scripform()});
+</script>

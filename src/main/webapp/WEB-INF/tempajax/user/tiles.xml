@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="userListHistory" template="/WEB-INF/tempajax/user/dashboard/list_history.jsp"></definition>
+	<definition name="userListGlobeCompanies" template="/WEB-INF/tempajax/user/globe/list_companies.jsp"></definition>
+	<definition name="userListGlobeProfiles" template="/WEB-INF/tempajax/user/globe/list_profiles.jsp"></definition>
+	
+	<definition name="userListFavoritePosts" template="/WEB-INF/tempajax/user/favorite/list_posts.jsp"></definition>
+	<definition name="userListFavoriteAnnonces" template="/WEB-INF/tempajax/user/favorite/list_annonces.jsp"></definition>
+	<definition name="userListFavoriteEvents" template="/WEB-INF/tempajax/user/favorite/list_events.jsp"></definition>
+	<definition name="userListFavoriteEmployes" template="/WEB-INF/tempajax/user/favorite/list_employes.jsp"></definition>
+	
+	<definition name="userListAlertPosts" template="/WEB-INF/tempajax/user/alerts/list_posts.jsp"></definition>
+	<definition name="userListAlertAnnonces" template="/WEB-INF/tempajax/user/alerts/list_annonces.jsp"></definition>
+	<definition name="userListAlertEvents" template="/WEB-INF/tempajax/user/alerts/list_events.jsp"></definition>
+	<definition name="userListAlertEmployes" template="/WEB-INF/tempajax/user/alerts/list_employes.jsp"></definition>
+	
+	<definition name="userListEasylistCompanies" template="/WEB-INF/tempajax/user/easylist/list_companies.jsp"></definition>
+	<definition name="userListEasylistCompany" template="/WEB-INF/tempajax/user/easylist/list_company.jsp"></definition>
+	<definition name="userListEasylistPosts" template="/WEB-INF/tempajax/user/easylist/list_posts.jsp"></definition>
+	<definition name="userListEasylistPost" template="/WEB-INF/tempajax/user/easylist/list_post.jsp"></definition>
+	<definition name="userListEasylistAnnonces" template="/WEB-INF/tempajax/user/easylist/list_annonces.jsp"></definition>
+	<definition name="userListEasylistAnnonce" template="/WEB-INF/tempajax/user/easylist/list_annonce.jsp"></definition>
+	<definition name="userListEasylistEvents" template="/WEB-INF/tempajax/user/easylist/list_events.jsp"></definition>
+	<definition name="userListEasylistEvent" template="/WEB-INF/tempajax/user/easylist/list_event.jsp"></definition>
+	<definition name="userListEasylistEmployes" template="/WEB-INF/tempajax/user/easylist/list_employes.jsp"></definition>
+	<definition name="userListEasylistEmploye" template="/WEB-INF/tempajax/user/easylist/list_employe.jsp"></definition>
+	
+	<definition name="userListNotices" template="/WEB-INF/tempajax/user/communication/list_notices.jsp"></definition>
+	<definition name="userListAppoints" template="/WEB-INF/tempajax/user/communication/list_appoints.jsp"></definition>
+	<definition name="userListEvaluations" template="/WEB-INF/tempajax/user/communication/list_evaluations.jsp"></definition>
+	<definition name="userListComments" template="/WEB-INF/tempajax/user/communication/list_comments.jsp"></definition>
+	<definition name="userListContributors" template="/WEB-INF/tempajax/user/communication/list_contributors.jsp"></definition>
+	<definition name="userListNotifications" template="/WEB-INF/tempajax/user/feedback/list_notifications.jsp"></definition>
+	<definition name="userListMessages" template="/WEB-INF/tempajax/user/feedback/list_messages.jsp"></definition>
+	<definition name="userListSenders" template="/WEB-INF/tempajax/user/feedback/list_senders.jsp"></definition>
+	<definition name="userListCommunications" template="/WEB-INF/tempajax/user/feedback/list_communications.jsp"></definition>
+	<definition name="userListSupports" template="/WEB-INF/tempajax/user/feedback/list_supports.jsp"></definition>
+	<definition name="userListResponses" template="/WEB-INF/tempajax/user/feedback/list_responses.jsp"></definition>
+	<definition name="userListBlacklist" template="/WEB-INF/tempajax/user/setting/list_blacklist.jsp"></definition>
+	
+	<definition name="userChartCompleted" template="/WEB-INF/tempajax/user/dashboard/chart_completed.jsp"></definition>
+	<definition name="userChartPerform" template="/WEB-INF/tempajax/user/dashboard/chart_perform.jsp"></definition>
+	<definition name="userChartAnalytic" template="/WEB-INF/tempajax/user/dashboard/chart_analytic.jsp"></definition>
+</tiles-definitions>

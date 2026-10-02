@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	
+	<definition name="inboxMenuNotification" template="/WEB-INF/tempajax/inbox/menu_notification.jsp"></definition>
+	<definition name="inboxSubNotification" template="/WEB-INF/tempajax/inbox/sub_notification.jsp"></definition>
+	<definition name="inboxMenuTalk" template="/WEB-INF/tempajax/inbox/menu_talk.jsp"></definition>
+	<definition name="inboxSubTalk" template="/WEB-INF/tempajax/inbox/sub_talk.jsp"></definition>
+	<definition name="inboxMenuLinked" template="/WEB-INF/tempajax/inbox/menu_linked.jsp"></definition>
+	<definition name="inboxListChaters" template="/WEB-INF/tempajax/inbox/list_chaters.jsp"></definition>
+	<definition name="inboxMessagesPopup" template="/WEB-INF/tempajax/inbox/messages_popup.jsp"></definition>
+	<definition name="inboxMenuMessages" template="/WEB-INF/tempajax/inbox/menu_messages.jsp"></definition>
+	<definition name="inboxSubMessages" template="/WEB-INF/tempajax/inbox/sub_messages.jsp"></definition>
+	
+	<definition name="inboxListSupport" template="/WEB-INF/tempajax/inbox/list_support.jsp"></definition>
+	<definition name="inboxMenuSupports" template="/WEB-INF/tempajax/inbox/menu_supports.jsp"></definition>
+	<definition name="inboxSubSupports" template="/WEB-INF/tempajax/inbox/sub_supports.jsp"></definition>
+	<definition name="inboxSheetSupports" template="/WEB-INF/tempajax/inbox/sheet_supports.jsp"></definition>
+	
+	<definition name="inboxFollowedCompanies" template="/WEB-INF/tempajax/inbox/list_companies.jsp"></definition>
+	<definition name="inboxFollowedAccounts" template="/WEB-INF/tempajax/inbox/list_accounts.jsp"></definition>
+	<definition name="inboxFollowedUsers" template="/WEB-INF/tempajax/inbox/list_users.jsp"></definition>
+	
+</tiles-definitions>
+       

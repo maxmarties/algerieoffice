@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	
+	<!-- REGISTER -->
+	<definition name="register" template="/WEB-INF/pages/register/layout.jsp">
+        <put-attribute name="meta" value="/WEB-INF/tags/meta_website.jsp" />
+		<put-attribute name="link" value="" />
+		<put-attribute name="menu" value="/WEB-INF/menus/menu_register.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/footers/footer_register.jsp" />
+        <put-attribute name="dialog" value="" />
+        <put-attribute name="script" value="" />
+	</definition>
+	
+	<!-- REGISTER USER  -->
+	<definition name="registerUser" extends="register">
+		<put-attribute name="link" value="/WEB-INF/links/register/l_user.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/register/user.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/register/s_user.jsp" />
+	</definition>
+	
+	<!-- REGISTER COMPANY  -->
+	<definition name="registerCompany" extends="register">
+		<put-attribute name="link" value="/WEB-INF/links/register/l_company.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/register/company.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/register/s_company.jsp" />
+	</definition>
+	
+	<!-- REGISTER CONFIRM  -->
+	<definition name="registerConfirm" extends="register">
+		<put-attribute name="link" value="/WEB-INF/links/register/l_confirm.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/register/confirm.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/register/s_confirm.jsp" />
+	</definition>
+	
+	<!-- HOME LOGIN  -->
+	<definition name="homeLogin" extends="register">
+		<put-attribute name="link" value="/WEB-INF/links/login/l_home.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/login/home.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/login/s_home.jsp" />
+	</definition>
+	
+	<!-- RESET PASSWORD  -->
+	<definition name="resetLogin" extends="register">
+		<put-attribute name="link" value="/WEB-INF/links/login/l_reset.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/login/reset.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/login/s_reset.jsp" />
+	</definition>
+	
+	<!-- UPDATE PASSWORD  -->
+	<definition name="updateLogin" extends="register">
+		<put-attribute name="link" value="/WEB-INF/links/login/l_update.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/login/update.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/login/s_update.jsp" />
+	</definition>
+	
+	<!-- RESEND TOKEN -->
+	<definition name="resendLogin" extends="register">
+		<put-attribute name="link" value="/WEB-INF/links/login/l_resend.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/login/resend.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/login/s_resend.jsp" />
+	</definition>
+	
+	<!-- CONFIRM LOGIN  -->
+	<definition name="confirmLogin" extends="register">
+		<put-attribute name="link" value="/WEB-INF/links/login/l_confirm.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/login/confirm.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/login/s_confirm.jsp" />
+	</definition>
+	
+</tiles-definitions>

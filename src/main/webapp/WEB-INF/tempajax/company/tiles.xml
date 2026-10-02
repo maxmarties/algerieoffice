@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="companyListJournal" template="/WEB-INF/tempajax/company/dashboard/list_journal.jsp"></definition>
+	<definition name="companyListJournalAccess" template="/WEB-INF/tempajax/company/dashboard/access_journal.jsp"></definition>
+	<definition name="companyListDetect" template="/WEB-INF/tempajax/company/dashboard/list_detect.jsp"></definition>
+	<definition name="companyListDetectAccess" template="/WEB-INF/tempajax/company/dashboard/access_detect.jsp"></definition>
+	<definition name="companyListAnalyticAccess" template="/WEB-INF/tempajax/company/dashboard/access_analytic.jsp"></definition>
+
+	<definition name="companyListPosts" template="/WEB-INF/tempajax/company/posts/list_posts.jsp"></definition>
+	<definition name="companyListCategories" template="/WEB-INF/tempajax/company/posts/list_categories.jsp"></definition>
+	<definition name="companyListStatistic" template="/WEB-INF/tempajax/company/posts/list_statistic.jsp"></definition>
+	<definition name="companyListStatisticAccess" template="/WEB-INF/tempajax/company/posts/access_statistic.jsp"></definition>
+
+	<definition name="companyListPromotes" template="/WEB-INF/tempajax/company/marketplace/list_promotes.jsp"></definition>
+	<definition name="companyListAnnonces" template="/WEB-INF/tempajax/company/marketplace/list_annonces.jsp"></definition>
+	<definition name="companyListEmployes" template="/WEB-INF/tempajax/company/marketplace/list_employes.jsp"></definition>
+	<definition name="companyListCampaigns" template="/WEB-INF/tempajax/company/marketplace/list_campaigns.jsp"></definition>
+	<definition name="companyListChoserCampaigns" template="/WEB-INF/tempajax/company/marketplace/choser_campaigns.jsp"></definition>
+	
+	<definition name="companyListWorks" template="/WEB-INF/tempajax/company/portfolio/list_works.jsp"></definition>
+	<definition name="companyListActualities" template="/WEB-INF/tempajax/company/portfolio/list_actualities.jsp"></definition>
+	<definition name="companyListEvents" template="/WEB-INF/tempajax/company/portfolio/list_events.jsp"></definition>
+	<definition name="companyListFaqs" template="/WEB-INF/tempajax/company/portfolio/list_faqs.jsp"></definition>
+	<definition name="companyListPartners" template="/WEB-INF/tempajax/company/portfolio/list_partners.jsp"></definition>
+	
+	<definition name="companyListUsers" template="/WEB-INF/tempajax/company/team/list_users.jsp"></definition>
+	<definition name="companyListAgents" template="/WEB-INF/tempajax/company/team/list_agents.jsp"></definition>
+	<definition name="companyListGuests" template="/WEB-INF/tempajax/company/team/list_guests.jsp"></definition>
+	
+	<definition name="companyListNotices" template="/WEB-INF/tempajax/company/communication/list_notices.jsp"></definition>
+	<definition name="companyListAppoints" template="/WEB-INF/tempajax/company/communication/list_appoints.jsp"></definition>
+	<definition name="companyListEvaluations" template="/WEB-INF/tempajax/company/communication/list_evaluations.jsp"></definition>
+	<definition name="companyListCollaborators" template="/WEB-INF/tempajax/company/communication/list_collaborators.jsp"></definition>
+	<definition name="companyListContacts" template="/WEB-INF/tempajax/company/communication/list_contacts.jsp"></definition>
+	<definition name="companyListGuestPartners" template="/WEB-INF/tempajax/company/communication/list_partners.jsp"></definition>
+	<definition name="companyListChatbots" template="/WEB-INF/tempajax/company/communication/list_chatbots.jsp"></definition>
+	
+	<definition name="companyListQuotes" template="/WEB-INF/tempajax/company/prospect/list_quotes.jsp"></definition>
+	<definition name="companyListAds" template="/WEB-INF/tempajax/company/prospect/list_ads.jsp"></definition>
+	<definition name="companyListInfos" template="/WEB-INF/tempajax/company/prospect/list_infos.jsp"></definition>
+	<definition name="companyListJobs" template="/WEB-INF/tempajax/company/prospect/list_jobs.jsp"></definition>
+	
+	<definition name="companyListBlacklists" template="/WEB-INF/tempajax/company/tools/list_blacklists.jsp"></definition>
+	<definition name="companyListRecyclePost" template="/WEB-INF/tempajax/company/tools/recycle/list_post.jsp"></definition>
+	<definition name="companyListRecyclePromote" template="/WEB-INF/tempajax/company/tools/recycle/list_promote.jsp"></definition>
+	<definition name="companyListRecycleAnnonce" template="/WEB-INF/tempajax/company/tools/recycle/list_annonce.jsp"></definition>
+	<definition name="companyListRecycleEmploye" template="/WEB-INF/tempajax/company/tools/recycle/list_employe.jsp"></definition>
+	<definition name="companyListSubscribes" template="/WEB-INF/tempajax/company/tools/list_subscribes.jsp"></definition>
+	
+	<definition name="companyAnalyticFavorite" template="/WEB-INF/tempajax/company/dashboard/analytic/analytic_favorite.jsp"></definition>
+	<definition name="companyAnalyticDocument" template="/WEB-INF/tempajax/company/dashboard/analytic/analytic_document.jsp"></definition>
+	<definition name="companyAnalyticAccess" template="/WEB-INF/tempajax/company/dashboard/analytic/analytic_access.jsp"></definition>
+	<definition name="companyAnalyticActivity" template="/WEB-INF/tempajax/company/dashboard/analytic/analytic_activity.jsp"></definition>
+	<definition name="companyAnalyticEvaluation" template="/WEB-INF/tempajax/company/dashboard/analytic/analytic_evaluation.jsp"></definition>
+	<definition name="companyAnalyticContact" template="/WEB-INF/tempajax/company/dashboard/analytic/analytic_contact.jsp"></definition>
+	<definition name="companyAnalyticGuest" template="/WEB-INF/tempajax/company/dashboard/analytic/analytic_guest.jsp"></definition>
+	<definition name="companyAnalyticPost" template="/WEB-INF/tempajax/company/posts/analytic/analytic_post.jsp"></definition>
+	<definition name="companyAnalyticActivityPost" template="/WEB-INF/tempajax/company/posts/analytic/analytic_activity.jsp"></definition>
+	
+	<definition name="companyChartTrafic" template="/WEB-INF/tempajax/company/dashboard/chart/chart_trafic.jsp"></definition>
+	<definition name="companyChartContact" template="/WEB-INF/tempajax/company/dashboard/chart/chart_contact.jsp"></definition>
+	<definition name="companyChartCompleted" template="/WEB-INF/tempajax/company/dashboard/chart/chart_completed.jsp"></definition>
+	<definition name="companyChartStatistic" template="/WEB-INF/tempajax/company/dashboard/chart/chart_statistic.jsp"></definition>
+	<definition name="companyChartMarket" template="/WEB-INF/tempajax/company/dashboard/chart/chart_market.jsp"></definition>
+	
+	<definition name="companyEmailingArticles" template="/WEB-INF/tempajax/company/newsletter/emailing_articles.jsp"></definition>
+	<definition name="companyEmailingUsers" template="/WEB-INF/tempajax/company/newsletter/emailing_users.jsp"></definition>
+	<definition name="companyEmailingCompanies" template="/WEB-INF/tempajax/company/newsletter/emailing_companies.jsp"></definition>
+	<definition name="companyEmailingEasylist" template="/WEB-INF/tempajax/company/newsletter/emailing_easylist.jsp"></definition>
+	<definition name="companyEmailingItems" template="/WEB-INF/tempajax/company/newsletter/emailing_items.jsp"></definition>
+	
+</tiles-definitions>

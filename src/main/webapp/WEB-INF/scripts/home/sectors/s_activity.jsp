@@ -1,0 +1,8 @@
+<%@ include file="/WEB-INF/tags/script/script_public.jsp"%>
+<script src="<c:url value="/static/webjars/js/lib/owlcarousel/owlcarousel.min.js" />"></script>
+<script src="<c:url value="/static/webjars/js/lib/chartjs/chart.min.js" />"></script>
+<script src="<c:url value="/static/webjars/js/lib/vectormap/jquery.vmap.min.js" />"></script>
+<script src="<c:url value="/static/webjars/js/plugin/scripanalytic.min.js" />"></script>
+<script type="text/javascript">
+$(function(){$("#vmapRegion").vectorMap({enableZoom:!1,showTooltip:!0,color:'<c:out value="${currentConfig.aocolor(4)}"/>',hoverColor:'<c:out value="${currentConfig.aocolor(3)}"/>',selectedColor:'<c:out value="${currentConfig.aocolor(3)}"/>',borderColor:'<c:out value="${currentConfig.aocolor(2)}"/>',backgroundColor:"transparent",onRegionClick:function(o,r,e){window.location.href=$('[data-region="'+r+'"]').attr("href")}}),$("#screenAnalytic").scripanalytic({url:'<c:url value="/feedback/analyse/"/>',activity:'<c:out value="${activity.code}"/>',primaryColor:'<c:out value="${currentConfig.aocolor(3)}"/>',greenColor:'<c:out value="${currentConfig.aocolor(36)}"/>',yellowColor:'<c:out value="${currentConfig.aocolor(37)}"/>',blueColor:'<c:out value="${currentConfig.aocolor(38)}"/>',redColor:'<c:out value="${currentConfig.aocolor(35)}"/>',whiteColor:'<c:out value="${currentConfig.aocolor(2)}"/>',lineColor:'<c:out value="${currentConfig.aocolor(59)}"/>'}),$("#cardScreenBlog").find(".owl-carousel").owlCarousel({autoplay:!1,dots:!0,smartSpeed:300,animateIn:"fadeFromLeft",animateOut:"fadeOutFromLeft",rtl:Algerieoffice.rtl()})});
+</script>

@@ -1,0 +1,22 @@
+package com.rinitec.algerieoffice.persistence.dao.companymaps.overview;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+
+import com.rinitec.algerieoffice.persistence.modal.companymaps.overview.SliderItem;
+
+public interface SliderItemRepository extends JpaRepository<SliderItem, Long> {
+
+	/**
+	 * VERSION BEGIN 03/2021
+	 * @param lines
+	 */
+	@Modifying
+	@Query("delete from SliderItem s where s.id in :lines")
+	void deleteLinesSliderItem(@Param("lines") List<Long> lines);
+	
+}

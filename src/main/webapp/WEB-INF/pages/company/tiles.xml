@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	
+	<!-- COMPANY -->
+	<definition name="company" template="/WEB-INF/pages/company/layout.jsp">
+        <put-attribute name="meta" value="/WEB-INF/tags/meta_admin.jsp" />
+		<put-attribute name="link" value="" />
+		<put-attribute name="menu" value="/WEB-INF/menus/menu_company.jsp" />
+		<put-attribute name="aside" value="/WEB-INF/asides/aside_company.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/footers/footer_dashboard.jsp" />
+        <put-attribute name="support" value="/WEB-INF/chats/chater_support.jsp" />
+        <put-attribute name="chater" value="/WEB-INF/chats/chater_public.jsp" />
+        <put-attribute name="dialog" value="" />
+        <put-attribute name="script" value="" />
+	</definition>
+	
+	<!-- COMPANY DASHBOARD  -->
+	<definition name="companyDashboard" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/dashboard/l_dashboard.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/dashboard/dashboard.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_started.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/dashboard/s_dashboard.jsp" />
+	</definition>
+	
+	<!-- COMPANY ANALYTIC  -->
+	<definition name="companyAnalytic" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/dashboard/l_analytic.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/dashboard/analytic.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/dashboard/s_analytic.jsp" />
+	</definition>
+	
+	<!-- COMPANY JOURNAL  -->
+	<definition name="companyJournal" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/dashboard/l_journal.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/dashboard/journal.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/dashboard/s_journal.jsp" />
+	</definition>
+	
+	<!-- COMPANY DETECT  -->
+	<definition name="companyDetect" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/dashboard/l_detect.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/dashboard/detect.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/dashboard/s_detect.jsp" />
+	</definition>
+	
+	<!-- COMPANY POSTS POSTS  -->
+	<definition name="companyPostsPosts" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/posts/l_posts.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/posts/posts.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/posts/s_posts.jsp" />
+	</definition>
+	
+	<!-- COMPANY POSTS POST  -->
+	<definition name="companyPostsPost" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/posts/l_post.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/posts/post.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/posts/s_post.jsp" />
+	</definition>
+	
+	<!-- COMPANY POSTS CATEGORIES  -->
+	<definition name="companyPostsCategories" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/posts/l_categories.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/posts/categories.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/posts/s_categories.jsp" />
+	</definition>
+	
+	<!-- COMPANY POSTS CATEGORY  -->
+	<definition name="companyPostsCategory" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/posts/l_category.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/posts/category.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/posts/s_category.jsp" />
+	</definition>
+	
+	<!-- COMPANY POSTS STATISTIC  -->
+	<definition name="companyPostsStatistic" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/posts/l_statistic.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/posts/statistic.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/posts/s_statistic.jsp" />
+	</definition>
+	
+	<!-- COMPANY MARKETPLACE PROMOTES  -->
+	<definition name="companyMarketplacePromotes" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/marketplace/l_promotes.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/marketplace/promotes.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/marketplace/s_promotes.jsp" />
+	</definition>
+	
+	<!-- COMPANY MARKETPLACE PROMOTE  -->
+	<definition name="companyMarketplacePromote" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/marketplace/l_promote.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/marketplace/promote.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/marketplace/s_promote.jsp" />
+	</definition>
+	
+	<!-- COMPANY MARKETPLACE ORDER  -->
+	<definition name="companyMarketplaceOrder" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/marketplace/l_order.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/marketplace/order.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/marketplace/s_order.jsp" />
+	</definition>
+	
+	<!-- COMPANY MARKETPLACE ANNONCES  -->
+	<definition name="companyMarketplaceAnnonces" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/marketplace/l_annonces.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/marketplace/annonces.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/marketplace/s_annonces.jsp" />
+	</definition>
+	
+	<!-- COMPANY MARKETPLACE ANNONCE  -->
+	<definition name="companyMarketplaceAnnonce" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/marketplace/l_annonce.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/marketplace/annonce.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/marketplace/s_annonce.jsp" />
+	</definition>
+	
+	<!-- COMPANY MARKETPLACE EMPLOYES  -->
+	<definition name="companyMarketplaceEmployes" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/marketplace/l_employes.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/marketplace/employes.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/marketplace/s_employes.jsp" />
+	</definition>
+	
+	<!-- COMPANY MARKETPLACE EMPLOYE  -->
+	<definition name="companyMarketplaceEmploye" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/marketplace/l_employe.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/marketplace/employe.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/marketplace/s_employe.jsp" />
+	</definition>
+	
+	<!-- COMPANY MARKETPLACE CAMPAIGNS  -->
+	<definition name="companyMarketplaceCampaigns" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/marketplace/l_campaigns.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/marketplace/campaigns.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/marketplace/s_campaigns.jsp" />
+	</definition>
+	
+	<!-- COMPANY MARKETPLACE CAMPAIGN  -->
+	<definition name="companyMarketplaceCampaign" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/marketplace/l_campaign.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/marketplace/campaign.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/marketplace/s_campaign.jsp" />
+	</definition>
+	
+	<!-- COMPANY MARKETPLACE CAMPAIGN ORDER  -->
+	<definition name="companyMarketplaceOrders" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/marketplace/l_orders.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/marketplace/orders.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/marketplace/s_orders.jsp" />
+	</definition>
+	
+	<!-- COMPANY PORTFOLIO WORKS  -->
+	<definition name="companyPortfolioWorks" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/portfolio/l_works.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/portfolio/works.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/portfolio/s_works.jsp" />
+	</definition>
+	
+	<!-- COMPANY PORTFOLIO WORK  -->
+	<definition name="companyPortfolioWork" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/portfolio/l_work.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/portfolio/work.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/portfolio/s_work.jsp" />
+	</definition>
+	
+	<!-- COMPANY PORTFOLIO ACTUALITIES  -->
+	<definition name="companyPortfolioActualities" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/portfolio/l_actualities.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/portfolio/actualities.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/portfolio/s_actualities.jsp" />
+	</definition>
+	
+	<!-- COMPANY PORTFOLIO ACTUALITY  -->
+	<definition name="companyPortfolioActuality" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/portfolio/l_actuality.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/portfolio/actuality.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/portfolio/s_actuality.jsp" />
+	</definition>
+	
+	<!-- COMPANY PORTFOLIO EVENTS  -->
+	<definition name="companyPortfolioEvents" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/portfolio/l_events.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/portfolio/events.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/portfolio/s_events.jsp" />
+	</definition>
+	
+	<!-- COMPANY PORTFOLIO EVENT  -->
+	<definition name="companyPortfolioEvent" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/portfolio/l_event.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/portfolio/event.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/portfolio/s_event.jsp" />
+	</definition>
+	
+	<!-- COMPANY PORTFOLIO FAQS  -->
+	<definition name="companyPortfolioFaqs" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/portfolio/l_faqs.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/portfolio/faqs.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/portfolio/s_faqs.jsp" />
+	</definition>
+	
+	<!-- COMPANY PORTFOLIO FAQ  -->
+	<definition name="companyPortfolioFaq" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/portfolio/l_faq.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/portfolio/faq.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/portfolio/s_faq.jsp" />
+	</definition>
+	
+	<!-- COMPANY PORTFOLIO PARTENERS  -->
+	<definition name="companyPortfolioPartners" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/portfolio/l_partners.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/portfolio/partners.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/portfolio/s_partners.jsp" />
+	</definition>
+	
+	<!-- COMPANY PORTFOLIO NEW PARTENER  -->
+	<definition name="companyPortfolioNewpartner" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/portfolio/l_newpartner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/portfolio/newpartner.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/portfolio/s_newpartner.jsp" />
+	</definition>
+	
+	<!-- COMPANY PORTFOLIO EDIT PARTENER  -->
+	<definition name="companyPortfolioEditpartner" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/portfolio/l_editpartner.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/portfolio/editpartner.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/portfolio/s_editpartner.jsp" />
+	</definition>
+	
+	<!-- COMPANY OVERVIEW HEADER  -->
+	<definition name="companyOverviewHeader" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/overview/l_header.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/overview/header.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/overview/s_header.jsp" />
+	</definition>
+	
+	<!-- COMPANY OVERVIEW PRESENTATION  -->
+	<definition name="companyOverviewPresentation" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/overview/l_presentation.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/overview/presentation.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/overview/s_presentation.jsp" />
+	</definition>
+	
+	<!-- COMPANY OVERVIEW CATALOG  -->
+	<definition name="companyOverviewCatalog" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/overview/l_catalog.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/overview/catalog.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/overview/s_catalog.jsp" />
+	</definition>
+	
+	<!-- COMPANY OVERVIEW SLIDER  -->
+	<definition name="companyOverviewSlider" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/overview/l_slider.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/overview/slider.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/overview/s_slider.jsp" />
+	</definition>
+	
+	<!-- COMPANY OVERVIEW TIMELINE  -->
+	<definition name="companyOverviewTimeline" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/overview/l_timeline.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/overview/timeline.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/overview/s_timeline.jsp" />
+	</definition>
+	
+	<!-- COMPANY OVERVIEW ABOUT  -->
+	<definition name="companyOverviewAbout" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/overview/l_about.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/overview/about.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/overview/s_about.jsp" />
+	</definition>
+	
+	<!-- COMPANY OVERVIEW ABOUT  -->
+	<definition name="companyOverviewThink" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/overview/l_think.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/overview/think.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/overview/s_think.jsp" />
+	</definition>
+	
+	<!-- COMPANY MANAGE DISPLAY  -->
+	<definition name="companyManageDisplay" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/manage/l_display.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/manage/display.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/manage/s_display.jsp" />
+	</definition>
+	
+	<!-- COMPANY MANAGE STICKY  -->
+	<definition name="companyManageSticky" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/manage/l_sticky.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/manage/sticky.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/manage/s_sticky.jsp" />
+	</definition>
+	
+	<!-- COMPANY MANAGE WIDGET  -->
+	<definition name="companyManageWidget" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/manage/l_widget.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/manage/widget.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/manage/s_widget.jsp" />
+	</definition>
+	
+	<!-- COMPANY MANAGE APPEARANCE  -->
+	<definition name="companyManageAppearance" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/manage/l_appearance.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/manage/appearance.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/manage/s_appearance.jsp" />
+	</definition>
+	
+	<!-- COMPANY MANAGE PREFERENCE  -->
+	<definition name="companyManagePreference" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/manage/l_preference.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/manage/preference.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/manage/s_preference.jsp" />
+	</definition>
+	
+	<!-- COMPANY PROFILE IDENTITY  -->
+	<definition name="companyProfileIdentity" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/profile/l_identity.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/profile/identity.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/profile/s_identity.jsp" />
+	</definition>
+	
+	<!-- COMPANY PROFILE BRIEFCASE  -->
+	<definition name="companyProfileBriefcase" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/profile/l_briefcase.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/profile/briefcase.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/profile/s_briefcase.jsp" />
+	</definition>
+	
+	<!-- COMPANY PROFILE SHEDULE  -->
+	<definition name="companyProfileShedule" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/profile/l_shedule.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/profile/shedule.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/profile/s_shedule.jsp" />
+	</definition>
+	
+	<!-- COMPANY PROFILE LOCATION  -->
+	<definition name="companyProfileLocation" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/profile/l_location.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/profile/location.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/profile/s_location.jsp" />
+	</definition>
+	
+	<!-- COMPANY PROFILE LINKED  -->
+	<definition name="companyProfileLinked" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/profile/l_linked.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/profile/linked.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/profile/s_linked.jsp" />
+	</definition>
+	
+	<!-- COMPANY PROFILE CREDIT  -->
+	<definition name="companyProfileCredit" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/profile/l_credit.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/profile/credit.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/profile/s_credit.jsp" />
+	</definition>
+	
+	<!-- COMPANY TEAM USERS  -->
+	<definition name="companyTeamUsers" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/team/l_users.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/team/users.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/team/s_users.jsp" />
+	</definition>
+	
+	<!-- COMPANY TEAM NEWUSER  -->
+	<definition name="companyTeamNewuser" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/team/l_newuser.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/team/newuser.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/team/s_newuser.jsp" />
+	</definition>
+	
+	<!-- COMPANY TEAM EDITUSER  -->
+	<definition name="companyTeamEdituser" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/team/l_edituser.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/team/edituser.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/team/s_edituser.jsp" />
+	</definition>
+	
+	<!-- COMPANY TEAM AGENTS  -->
+	<definition name="companyTeamAgents" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/team/l_agents.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/team/agents.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/team/s_agents.jsp" />
+	</definition>
+	
+	<!-- COMPANY TEAM AGENT  -->
+	<definition name="companyTeamAgent" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/team/l_agent.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/team/agent.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/team/s_agent.jsp" />
+	</definition>
+	
+	<!-- COMPANY TEAM GUESTS  -->
+	<definition name="companyTeamGuests" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/team/l_guests.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/team/guests.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/team/s_guests.jsp" />
+	</definition>
+	
+	<!-- COMPANY COMMUNICATION NOTICES  -->
+	<definition name="companyCommunicationNotices" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/communication/l_notices.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/communication/notices.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/communication/s_notices.jsp" />
+	</definition>
+	
+	<!-- COMPANY COMMUNICATION APPOINTS  -->
+	<definition name="companyCommunicationAppoints" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/communication/l_appoints.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/communication/appoints.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/communication/s_appoints.jsp" />
+	</definition>
+	
+	<!-- COMPANY COMMUNICATION APPOINT  -->
+	<definition name="companyCommunicationAppoint" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/communication/l_appoint.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/communication/appoint.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/communication/s_appoint.jsp" />
+	</definition>
+	
+	<!-- COMPANY COMMUNICATION EVALUATION  -->
+	<definition name="companyCommunicationEvaluations" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/communication/l_evaluations.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/communication/evaluations.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/communication/s_evaluations.jsp" />
+	</definition>
+	
+	<!-- COMPANY COMMUNICATION COLLABORATORS  -->
+	<definition name="companyCommunicationCollaborators" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/communication/l_collaborators.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/communication/collaborators.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/communication/s_collaborators.jsp" />
+	</definition>
+	
+	<!-- COMPANY COMMUNICATION CONTACTS  -->
+	<definition name="companyCommunicationContacts" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/communication/l_contacts.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/communication/contacts.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/communication/s_contacts.jsp" />
+	</definition>
+	
+	<!-- COMPANY COMMUNICATION CONTACT  -->
+	<definition name="companyCommunicationContact" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/communication/l_contact.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/communication/contact.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/communication/s_contact.jsp" />
+	</definition>
+	
+	<!-- COMPANY COMMUNICATION PARTNERS  -->
+	<definition name="companyCommunicationPartners" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/communication/l_partners.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/communication/partners.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/communication/s_partners.jsp" />
+	</definition>
+	
+	<!-- COMPANY COMMUNICATION CHATBOTS  -->
+	<definition name="companyCommunicationChatbots" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/communication/l_chatbots.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/communication/chatbots.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/communication/s_chatbots.jsp" />
+	</definition>
+	
+	<!-- COMPANY COMMUNICATION CHATBOT  -->
+	<definition name="companyCommunicationChatbot" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/communication/l_chatbot.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/communication/chatbot.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/communication/s_chatbot.jsp" />
+	</definition>
+	
+	<!-- COMPANY PROSPECT QUOTES  -->
+	<definition name="companyProspectQuotes" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/prospect/l_quotes.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/prospect/quotes.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/prospect/s_quotes.jsp" />
+	</definition>
+	
+	<!-- COMPANY PROSPECT QUOTE  -->
+	<definition name="companyProspectQuote" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/prospect/l_quote.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/prospect/quote.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/prospect/s_quote.jsp" />
+	</definition>
+	
+	<!-- COMPANY PROSPECT ADS  -->
+	<definition name="companyProspectAds" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/prospect/l_ads.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/prospect/ads.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/prospect/s_ads.jsp" />
+	</definition>
+	
+	<!-- COMPANY PROSPECT AD  -->
+	<definition name="companyProspectAd" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/prospect/l_ad.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/prospect/ad.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/prospect/s_ad.jsp" />
+	</definition>
+	
+	<!-- COMPANY PROSPECT INFOS  -->
+	<definition name="companyProspectInfos" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/prospect/l_infos.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/prospect/infos.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/prospect/s_infos.jsp" />
+	</definition>
+	
+	<!-- COMPANY PROSPECT INFO  -->
+	<definition name="companyProspectInfo" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/prospect/l_info.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/prospect/info.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/prospect/s_info.jsp" />
+	</definition>
+	
+	<!-- COMPANY PROSPECT JOBS  -->
+	<definition name="companyProspectJobs" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/prospect/l_jobs.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/prospect/jobs.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/prospect/s_jobs.jsp" />
+	</definition>
+	
+	<!-- COMPANY PROSPECT JOB  -->
+	<definition name="companyProspectJob" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/prospect/l_job.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/prospect/job.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/prospect/s_job.jsp" />
+	</definition>
+	
+	<!-- COMPANY NEWSLETTER TEMPLATE  -->
+	<definition name="companyNewsletterTemplate" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/newsletter/l_template.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/newsletter/template.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_cropper.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/newsletter/s_template.jsp" />
+	</definition>
+	
+	<!-- COMPANY NEWSLETTER BUDGET  -->
+	<definition name="companyNewsletterBudget" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/newsletter/l_budget.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/newsletter/budget.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/newsletter/s_budget.jsp" />
+	</definition>
+	
+	<!-- COMPANY NEWSLETTER EMAILING  -->
+	<definition name="companyNewsletterEmailing" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/newsletter/l_emailing.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/newsletter/emailing.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/newsletter/s_emailing.jsp" />
+	</definition>
+	
+	<!-- COMPANY TOOLS SETTING  -->
+	<definition name="companyToolsSetting" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/tools/l_setting.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/tools/setting.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/tools/s_setting.jsp" />
+	</definition>
+	
+	<!-- COMPANY TOOLS RECYCLE POST  -->
+	<definition name="companyToolsRecyclePost" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/tools/l_recycle.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/tools/recycle/posts.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/tools/recycle/s_posts.jsp" />
+	</definition>
+	
+	<!-- COMPANY TOOLS RECYCLE PROMOTE  -->
+	<definition name="companyToolsRecyclePromote" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/tools/l_recycle.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/tools/recycle/promotes.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/tools/recycle/s_promotes.jsp" />
+	</definition>
+	
+	<!-- COMPANY TOOLS RECYCLE ANNONCE  -->
+	<definition name="companyToolsRecycleAnnonce" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/tools/l_recycle.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/tools/recycle/annonces.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/tools/recycle/s_annonces.jsp" />
+	</definition>
+	
+	<!-- COMPANY TOOLS RECYCLE EMPLOYE  -->
+	<definition name="companyToolsRecycleEmployes" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/tools/l_recycle.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/tools/recycle/employes.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/tools/recycle/s_employes.jsp" />
+	</definition>
+	
+	<!-- COMPANY TOOLS BLACKLISTS  -->
+	<definition name="companyToolsBlacklists" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/tools/l_blacklists.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/tools/blacklists.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/tools/s_blacklists.jsp" />
+	</definition>
+	
+	<!-- COMPANY TOOLS BLACKLIST  -->
+	<definition name="companyToolsBlacklist" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/tools/l_blacklist.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/tools/blacklist.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/tools/s_blacklist.jsp" />
+	</definition>
+	
+	<!-- COMPANY TOOLS SUBSCRIBES  -->
+	<definition name="companyToolsSubscribes" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/tools/l_subscribes.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/tools/subscribes.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/tools/s_subscribes.jsp" />
+	</definition>
+	
+	<!-- COMPANY TOOLS SUBSCRIBE  -->
+	<definition name="companyToolsSubscribe" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/tools/l_subscribe.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/tools/subscribe.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/tools/s_subscribe.jsp" />
+	</definition>
+	
+	<!-- COMPANY TOOLS DEACTIVATE  -->
+	<definition name="companyToolsDeactivate" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/tools/l_deactivate.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/tools/deactivate.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/tools/s_deactivate.jsp" />
+	</definition>
+	
+	<!-- COMPANY HELP STARTED  -->
+	<definition name="companyHelpHome" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/help/l_home.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/help/home.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/help/s_home.jsp" />
+	</definition>
+	
+	<!-- COMPANY HELP BEGINNER  -->
+	<definition name="companyHelpBegginer" extends="company">
+		<put-attribute name="link" value="/WEB-INF/links/company/help/l_begginer.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/company/help/begginer.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/company/help/s_begginer.jsp" />
+	</definition>
+	
+</tiles-definitions>

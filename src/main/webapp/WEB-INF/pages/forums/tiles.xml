@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	
+	<!-- FORUMS  -->
+	<definition name="forums" template="/WEB-INF/pages/forums/layout.jsp">
+		<put-attribute name="meta" value="/WEB-INF/tags/meta_forums.jsp" />
+		<put-attribute name="link" value="" />
+		<put-attribute name="load" value="/WEB-INF/basics/loading_home.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/menus/menu_forums.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/footers/footer_forums.jsp" />
+		<put-attribute name="chater" value="/WEB-INF/chats/chater_public.jsp" />
+		<put-attribute name="dialog" value="" />
+		<put-attribute name="script" value="" />
+	</definition>
+	
+	<!-- FORUMS HOME  -->
+	<definition name="forumsHome" extends="forums">
+		<put-attribute name="link" value="/WEB-INF/links/forums/l_home.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/forums/home.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/forums/s_home.jsp" />
+	</definition>
+	
+	<!-- FORUMS INBOX  -->
+	<definition name="forumsInbox" extends="forums">
+		<put-attribute name="link" value="/WEB-INF/links/forums/l_inbox.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/forums/inbox.jsp" />
+        <put-attribute name="dialog" value="/WEB-INF/dialogs/dialog_topic.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/forums/s_inbox.jsp" />
+	</definition>
+	
+	<!-- FORUMS TOPIC  -->
+	<definition name="forumsTopic" extends="forums">
+		<put-attribute name="link" value="/WEB-INF/links/forums/l_topic.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/forums/topic.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/forums/s_topic.jsp" />
+	</definition>
+	
+	<!-- FORUMS MEMBER  -->
+	<definition name="forumsMember" extends="forums">
+		<put-attribute name="link" value="/WEB-INF/links/forums/l_member.jsp" />
+        <put-attribute name="body" value="/WEB-INF/pages/forums/member.jsp" />
+        <put-attribute name="script" value="/WEB-INF/scripts/forums/s_member.jsp" />
+	</definition>
+	
+</tiles-definitions>

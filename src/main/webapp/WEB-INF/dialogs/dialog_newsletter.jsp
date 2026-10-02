@@ -1,0 +1,2 @@
+<%@ include file="/WEB-INF/tags/libs/secs_libs.jsp"%>
+<sec:authorize access="isAnonymous()"><c:if test="${!currentConfig.newsletterCollapse}"><c:import url="/WEB-INF/fields/modals/modal_newsletter.jsp"/></c:if></sec:authorize>
